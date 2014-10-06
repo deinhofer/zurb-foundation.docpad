@@ -35,7 +35,7 @@ $body-font-style: normal;
 // You may include them if you want.
 // 
 $include-html-type-classes: false; //!! SHOULD BE FALSE, WHEN USING '_typography.scss'
-$include-html-button-classes: false;
+$include-html-button-classes: true;
 $include-html-form-classes:false;
 $include-html-custom-form-classes: false;
 $include-html-media-classes:false;

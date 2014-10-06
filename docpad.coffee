@@ -21,8 +21,8 @@ docpadConfig = {
 			]
 
 			# The default title of our website
-			title: "Acme"
-			company: "Acme Inc."
+			title: "D-Space - Assistive Technology Component Repository"
+			company: "GPII Inc."
 
 			# The website description (for SEO)
 			description: """
