@@ -50,6 +50,7 @@ docpadConfig = {
 			# Scripts
 			scripts: [
 				"/scripts/app.js"
+				"/scripts/script.js"
 			]
 
 
@@ -110,6 +111,12 @@ docpadConfig = {
 			bourbon: true
 		grunt:
       		gruntTasks: ["uglify"]
+		highlightjs:
+			aliases:
+				haml: 'xml'
+				less: 'css'
+				stylus: 'css'
+				md: 'markdown'
 
 	# =================================
 	# DocPad Events
