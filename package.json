@@ -26,7 +26,7 @@
     "npm": "1.2"
   },
   "dependencies": {
-    "docpad": "~6.69.1",
+    "docpad": "~6.57.3",
     "docpad-plugin-cleanurls": "~2.7.0",
     "docpad-plugin-coffeekup": "~2.2.0",
     "docpad-plugin-coffeescript": "~2.4.0",
@@ -34,9 +34,9 @@
     "docpad-plugin-ghpages": "~2.4.3",
     "docpad-plugin-grunt": "~2.1.1",
     "docpad-plugin-haml": "~2.0.2",
-    "docpad-plugin-highlightjs": "~2.2.2",
+    "docpad-plugin-highlightjs": "~2.3.0",
     "docpad-plugin-html2coffee": "~2.1.3",
-    "docpad-plugin-jade": "~2.7.0",
+    "docpad-plugin-jade": "~2.8.0",
     "docpad-plugin-less": "~2.4.1",
     "docpad-plugin-marked": "~2.2.1",
     "docpad-plugin-nativecomments": "~2.1.1",

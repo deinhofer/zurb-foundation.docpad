@@ -11,7 +11,12 @@ title: 'Home'
 			<h3>        
 				<p>You want to build an assistive product?</p>
 				<p>You want to reuse existing components, frameworks, libraries?</p>
-				<a class="button [radius round secondary success]" href="./pages/blog" role="button">Search components</a>
+				<form class="input [secondary success]" action="./pages/search" method="GET">
+				  <section>
+				    <input type="text" name="query" value="" />
+				    <input type="submit" value="Search" />
+				  </section>
+				</form>
 			</h3>
 		</div>
 	</div>
