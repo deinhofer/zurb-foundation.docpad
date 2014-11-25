@@ -2,7 +2,7 @@
 
 The mockup uses [Zurb Foundation](http://foundation.zurb.com/) and is realized with [DocPad](https://github.com/bevry/docpad).
 
-###To use the static mockup without dynamic search results, visit [here](http://deinhofer.github.io/zurb-foundation.docpad/).
+###Here you can find the [static mockup](http://deinhofer.github.io/zurb-foundation.docpad/) without dynamic search results.
 To be able to use the dynamic search feature and edit content, layout and style, please install docpad and run the project.
 
 ## Getting Started
