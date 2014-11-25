@@ -36,5 +36,5 @@ To be able to use the dynamic search feature and edit content, layout and style 
 
 5. Already installed [docpages-plugin-ghpages](https://github.com/docpad/docpad-plugin-ghpages) for easy publishing to github pages. See the link for how to publish. 
 ## Boring Legal Stuff
-
+The core of the mockup is forked from [ClearSky zurb skeleton](https://github.com/Clearskyabove/zurb-foundation.docpad) the original licenses are:
 Unless stated otherwise, all content is licensed under the [Creative Commons Attribution License](http://creativecommons.org/licenses/by/3.0/) and code licensed under the [MIT License](http://creativecommons.org/licenses/MIT/), © [ClearSkyABove](http://clearskyabove.com)
