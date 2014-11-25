@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title>HTML5-based Learning and Generation for Virtual Sensors | D-Space - Assistive Technology Component Repository</title>
+	<meta name="description" content="When your website appears in search results in say Google, the text here will be shown underneath your website's title." />
+	<meta name="keywords" content="place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website" />
+	<meta name="author" content="Martin Deinhofer" />
+
+	<!-- Output DocPad produced meta elements -->
+	<meta name="generator" content="DocPad v6.57.3" />
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- Styles -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro' rel='stylesheet' type='text/css'>
+	<link  rel="stylesheet" href="http://deinhofer.github.io/zurb-foundation.docpad//styles/zurb-foundation.css" /><link  rel="stylesheet" href="http://deinhofer.github.io/zurb-foundation.docpad//styles/style.css" /><link  rel="stylesheet" href="http://deinhofer.github.io/zurb-foundation.docpad//styles/highlightjs-github.css" />
+
+</head>
+<body >
+	<div id='layout'>
+	    <nav class="container top-bar" style="">
+	        <ul class=" title-area">
+	          <li class="name">
+	            <h1><a href="http://deinhofer.github.io/zurb-foundation.docpad//"> D-Space - Assistive Technology Component Repository</a></h1>
+	          </li>
+	          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	        </ul>  
+	        <section class="top-bar-section">
+	          <ul class="right">
+	          	
+	          	<li class="divider hide-for-small"></li>
+					<li typeof="sioc:Page" about="/pages/about" class="">
+						<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/about" property="dc:title">About</a>
+					</li>
+				
+	          	<li class="divider hide-for-small"></li>
+					<li typeof="sioc:Page" about="/pages/search" class="">
+						<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/search" property="dc:title">Search</a>
+					</li>
+				
+	          	<li class="divider hide-for-small"></li>
+					<li typeof="sioc:Page" about="/pages/Add_AT_Component" class="">
+						<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component" property="dc:title">Add Component</a>
+					</li>
+				
+	          </ul>
+	        </section>
+	    </nav>
+		<div role="main">
+			<article id="post" class="post">
+
+	<div class="row">
+		<div class="columns post-content">
+			<h1>HTML5-based Learning and Generation for Virtual Sensors</h1>
+			<h2 id="contents">Contents</h2>
+<p><a href="#Component_Description">Component Description</a></p>
+<p><a href="#Potential_Applications">Potential Applications</a></p>
+<p><a href="#Technologies">Technologies</a></p>
+<p><a href="#Licence_Information">Licence Information</a></p>
+<p><a href="#Status.2C_Known_Issues_.26_Planned_Work">Status, Known Issues &amp; Planned Work</a></p>
+<ul>
+<li><a href="#Code_Repository_and_Online_Documentation">Code Repository and Online Documentation</a></li>
+</ul>
+<hr>
+<h2 id="jactivity">jActivity</h2>
+<p>Keywords: Activity Recognition, HTML5, Machine Learning Contact: bachmann@teco.edu</p>
+<h3 id="component-description">Component Description</h3>
+<p>Commonly web sites are only adapted by static context parameters (screen size), preference sets or location information. The module adds the possibility to classify the user context during the browsing based on the acceleration of the smart phone.</p>
+<p>jActivity uses the two HTML5 events `DeviceMotion` and `DeviceOrientation`. The corresponding specifications can be found here: <a href="http://www.w3.org/TR/orientation-event/" title="http://www.w3.org/TR/orientation-event/">DeviceOrientation Event Specification (W3C Working Draft)</a>.</p>
+<p>The underlying learning system is the start of a reimplementation of the underlying actiServ system (<a href="http://www.teco.edu/~berch/publications/ISWC10" title="http://www.teco.edu/~berch/publications/ISWC10">http://www.teco.edu/~berch/publications/ISWC10</a>) using open source components. It currently supports only simple single user training.</p>
+<h3 id="potential-applications">Potential Applications</h3>
+<p>The system can be used to adapt the font size during different activities</p>
+<p>if getDecisionOfDT([... insert calculated features here ...]) == “Gehen”) { makeFontSizeBigger(); } else { makeFontSizeSmaller(); }</p>
+<h3 id="technologies">Technologies</h3>
+<p>The system uses HTML5 Device Orientation events (<a href="http://caniuse.com/deviceorientation," title="http://caniuse.com/deviceorientation,">http://caniuse.com/deviceorientation,</a> or any other kind of scalar sensor input )</p>
+<p>It is currently implemented using php on the server side.</p>
+<p>It further uses <a href="http://scikit-learn.org/" title="http://scikit-learn.org/">http://scikit-learn.org/</a> for training the classifiers.</p>
+<p>The client side generated by the server runs as javascript in the web browser.</p>
+<h3 id="licence-information">Licence Information</h3>
+<p>MIT Licence</p>
+<p>See <a href="https://github.com/teco-kit/jActivity/blob/master/LICENSE" title="https://github.com/teco-kit/jActivity/blob/master/LICENSE">https://github.com/teco-kit/jActivity/blob/master/LICENSE</a> for more Info</p>
+<h3 id="status-known-issues-planned-work">Status, Known Issues &amp; Planned Work</h3>
+<p>The generalization and personalization features for classifiers need to be ported from the proprietary Matlab code.</p>
+<p>More classifiers need to be implemented in javascript.</p>
+<h4 id="code-repository-and-online-documentation">Code Repository and Online Documentation</h4>
+<p><a href="https://github.com/teco-kit/jActivity/" title="https://github.com/teco-kit/jActivity/">https://github.com/teco-kit/jActivity/</a></p>
+
+		</div>
+	</div>
+</article>
+
+
+<div class="row">
+
+
+	
+</div>
+		</div>
+	    <div id='layout_footer'></div>
+	</div>
+	<footer id='footer' class="panel">
+		<div class="row">
+			<div class="columns large-5 small-12">
+			&copy; GPII Inc. 2014
+			</div>
+			<div class="columns large-7 small-12 ">
+				<ul class="inline-list foot-right">
+		          	
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/about" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/about" property="dc:title">About</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/faq" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/faq" property="dc:title">FAQ</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/search" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/search" property="dc:title">Search</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/Add_AT_Component" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component" property="dc:title">Add Component</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/search_advanced" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/search_advanced" property="dc:title"></a>
+						</li>
+					
+		        </ul>
+			</div>
+		</div>
+	</footer>
+	<!-- Scripts -->
+
+	<!-- Depending on browser support load the zepto-pack or the jquery-pack. 
+		As configured (see grunt-config.json) this includes: 
+		 - modernizr, 
+		 - zepto OR jquery
+		 - foundation.topbar.js
+
+		condition jquery or zepto adapted from: 
+		http://foundation.zurb.com/docs/javascript.html
+	-->
+	<script>
+	  document.write('<script src=/scripts/'
+	    + ('__proto__' in {} ? 'zepto' : 'jquery')
+	    + '-pack.min.js><\/script>');
+	</script>
+	<script>
+		//init all foundation plugins. 
+		//Currently this only includes foundation.topbar.js
+		//See http://foundation.zurb.com/docs/javascript.html
+		$(document).foundation();
+	</script>
+	<script defer="defer"  src="http://deinhofer.github.io/zurb-foundation.docpad//scripts/app.js"></script><script defer="defer"  src="http://deinhofer.github.io/zurb-foundation.docpad//scripts/script.js"></script>
+</body>
+</html>

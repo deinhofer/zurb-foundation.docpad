@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title>AsTeRICS AT Modules (Generic Websocket Data Interface) | D-Space - Assistive Technology Component Repository</title>
+	<meta name="description" content="When your website appears in search results in say Google, the text here will be shown underneath your website's title." />
+	<meta name="keywords" content="place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website" />
+	<meta name="author" content="Martin Deinhofer" />
+
+	<!-- Output DocPad produced meta elements -->
+	<meta name="generator" content="DocPad v6.57.3" />
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- Styles -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro' rel='stylesheet' type='text/css'>
+	<link  rel="stylesheet" href="http://deinhofer.github.io/zurb-foundation.docpad//styles/zurb-foundation.css" /><link  rel="stylesheet" href="http://deinhofer.github.io/zurb-foundation.docpad//styles/style.css" /><link  rel="stylesheet" href="http://deinhofer.github.io/zurb-foundation.docpad//styles/highlightjs-github.css" />
+
+</head>
+<body >
+	<div id='layout'>
+	    <nav class="container top-bar" style="">
+	        <ul class=" title-area">
+	          <li class="name">
+	            <h1><a href="http://deinhofer.github.io/zurb-foundation.docpad//"> D-Space - Assistive Technology Component Repository</a></h1>
+	          </li>
+	          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	        </ul>  
+	        <section class="top-bar-section">
+	          <ul class="right">
+	          	
+	          	<li class="divider hide-for-small"></li>
+					<li typeof="sioc:Page" about="/pages/about" class="">
+						<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/about" property="dc:title">About</a>
+					</li>
+				
+	          	<li class="divider hide-for-small"></li>
+					<li typeof="sioc:Page" about="/pages/search" class="">
+						<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/search" property="dc:title">Search</a>
+					</li>
+				
+	          	<li class="divider hide-for-small"></li>
+					<li typeof="sioc:Page" about="/pages/Add_AT_Component" class="">
+						<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component" property="dc:title">Add Component</a>
+					</li>
+				
+	          </ul>
+	        </section>
+	    </nav>
+		<div role="main">
+			<article id="post" class="post">
+
+	<div class="row">
+		<div class="columns post-content">
+			<h1>AsTeRICS AT Modules (Generic Websocket Data Interface)</h1>
+			<h2 id="contents">Contents</h2>
+<p><a href="#AsTeRICS_AT_Modules_.28Generic_Websocket_Data_Interface.29">AsTeRICS AT Modules (Generic Websocket Data Interface)</a></p>
+<p><a href="#Component_Description">Component Description</a></p>
+<p><a href="#Potential_Applications">Potential Applications</a></p>
+<p><a href="#Technologies">Technologies</a></p>
+<ul>
+<li><a href="#Definition_ACS">Definition ACS</a></li>
+<li><a href="#Definition_ARE">Definition ARE</a></li>
+<li><a href="#Definition_Plugin.2C_Port_and_Event">Definition Plugin, Port and Event</a></li>
+<li><a href="#Generic_Websocket_Data_Interface">Generic Websocket Data Interface</a></li>
+</ul>
+<p><a href="#Operating_System">Operating System</a></p>
+<p><a href="#Languages.2FLibraries">Languages/Libraries</a></p>
+<p><a href="#User_Interface">User Interface</a></p>
+<p><a href="#Licence_Information">Licence Information</a></p>
+<p><a href="#Further_Resources">Further Resources</a></p>
+<hr>
+<h2 id="asterics-at-modules-generic-websocket-data-interface-">AsTeRICS AT Modules (Generic Websocket Data Interface)</h2>
+<p>Keywords: Assistive Technologies, Sensor Data, Websockets Contact: <a href="/FHTW" title="FHTW">FHTW</a></p>
+<h3 id="component-description">Component Description</h3>
+<p>The “Assistive Technology Rapid Integration and Construction Set” (AsTeRICS) offers a flexible framework for Assistive Technologies (AT), which can be adapted to the motor abilities of users. AsTeRICS is intended to ease access to different devices such as personal computers, cell phones and smart home devices via one single platform which offers many different input methods. One input method that works well for a user may be used in different contexts – e.g. the same method for accessing the computer mouse function may be used to operate the home stereo. The various capabilities of the AsTeRICS system include PC input device emulation, game control, environmental control applications and utilization of embedded devices. AsTeRICS provides an affordable system for developing user driven AT by combining sensors like webcams, accelerometers, digital switches, sip/puff sensors and special mice/joysticks with basic actuators enabling mouse emulation, door openening, homecontrol.</p>
+<h3 id="potential-applications">Potential Applications</h3>
+<p>Choose an input modality best suiting your needs:</p>
+<ul>
+<li>Use a webcam and tracking of face movements to control a computer</li>
+<li>Use a sip/puff sensor to control a computer</li>
+<li>Use any joystick, keyboard, special mouse or special AT device as a joystick, keyboard or mouse to control a computer</li>
+<li>Use EMG/EEG biosignal acquisition to trigger actions</li>
+</ul>
+<p>Use your input modality of choice to do:</p>
+<ul>
+<li><p>Home automation</p>
+<ul>
+<li>Switch on/off light</li>
+<li>Control TV/Stereo</li>
+<li>Open/Close door</li>
+</ul>
+</li>
+<li><p>Remote control toys <a href="/Http://www.asterics.eu/index.php%3Fid%3D65" title="http://www.asterics.eu/index.php?id=65"></a><a href="http://www.asterics.eu/index.php?id=65" title="http://www.asterics.eu/index.php?id=65">http://www.asterics.eu/index.php?id=65</a></p>
+</li>
+<li>and many more !</li>
+</ul>
+<h3 id="technologies">Technologies</h3>
+<p>The following section explains several important concepts to understand and use the AsTeRICS framework as a whole or individula components in particular:</p>
+<h5 id="definition-acs">Definition ACS</h5>
+<p>AsTeRICS Configuration Suite is a graphical editor for easy building and adapting “Assistive Technologies”. For this purpose you use sensors, actuators and processors, which are included in the software. You can connect these elements and build your own individual setup (also called a “model”), which is specially adapted for your needs, easily and fast.</p>
+<h5 id="definition-are">Definition ARE</h5>
+<p>The AsTeRICS Runtime Environment is the basic software framework for all AsTeRICS applications and use-cases. The models built in the ACS will run in the ARE. The ACS can be seen as a configuration program for the ARE.</p>
+<h5 id="definition-plugin-port-and-event">Definition Plugin, Port and Event</h5>
+<p>The AsTeRICS Construction Set consists of many different plugins (components), where some of them could be interesting for integration into other assitive applications of software frameworks. A plugin can send and receive data via it&#39;s output and input ports. This data can be a continous flow of individual values (standard data types are supported: integer, string, boolean, double.) Furthermore, particular Events can be sent or received by plugins via the Event Trigger and Event Listener ports. An Event Listener port waits for an incoming event and can initiate a particular action in the plugin. An Event Trigger port can be used to send an event from the plugin to another one. The internal configuration parameters of a plugin can be influenced via the plugin Properties (which define eg. the mode of operation, a threshold value, or a filename parameter). When used inside the ARE framework, interconnected and configured plugins consitute the overall functionality of the AsTeRICS model.</p>
+<h5 id="generic-websocket-data-interface">Generic Websocket Data Interface</h5>
+<p>In the course of P4All a generic bidirectional data interface through a websocket will be provided. This way sensor data can be forwarded to a browser or another application to visualize the data or trigger actions. Vice versa an application can send data to feed in to the AsTeRICS system.</p>
+<p>The exact details of the interface are still to be defined and could be adapted to special requirements of implementers if necessary.</p>
+<h4 id="operating-system">Operating System</h4>
+<ul>
+<li>Windows XP, Vista, 7, 8</li>
+<li>A reduced subset will be available on Linux</li>
+</ul>
+<h4 id="languages-libraries">Languages/Libraries</h4>
+<ul>
+<li>Java (JRE-Version 7, 32-bit)</li>
+<li>native libraries</li>
+<li><a href="http://www.eclipse.org/equinox/" title="http://www.eclipse.org/equinox/">Equinox OSGI</a></li>
+</ul>
+<h4 id="user-interface">User Interface</h4>
+<ul>
+<li>Java Swing UI</li>
+</ul>
+<h3 id="licence-information">Licence Information</h3>
+<p>Originally, the AsTeRICS Runtime Environment (ARE) was licensed under GPLv3. <a href="http://www.asterics.eu/download/Licenses.pdf">[1]</a> For usage within the P4ALL/GPII project, the ARE and dedicated building blocks can be relicensed under a less restrictive licence. For more information please contact <a href="/FHTW" title="FHTW">FHTW</a>.</p>
+<h3 id="further-resources">Further Resources</h3>
+<p><a href="http://www.asterics.eu/index.php?id=88" title="http://www.asterics.eu/index.php?id=88">AsTeRICS homepage</a></p>
+<p><a href="http://www.asterics.eu/index.php?id=55" title="http://www.asterics.eu/index.php?id=55">Videos/Demos</a></p>
+<p><a href="http://www.asterics.eu/index.php?id=26" title="http://www.asterics.eu/index.php?id=26">Downloads and Documentation</a></p>
+<p><a href="https://github.com/asterics/AsTeRICS" title="https://github.com/asterics/AsTeRICS">Code Repository</a></p>
+
+		</div>
+	</div>
+</article>
+
+
+<div class="row">
+
+
+	
+</div>
+		</div>
+	    <div id='layout_footer'></div>
+	</div>
+	<footer id='footer' class="panel">
+		<div class="row">
+			<div class="columns large-5 small-12">
+			&copy; GPII Inc. 2014
+			</div>
+			<div class="columns large-7 small-12 ">
+				<ul class="inline-list foot-right">
+		          	
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/about" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/about" property="dc:title">About</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/faq" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/faq" property="dc:title">FAQ</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/search" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/search" property="dc:title">Search</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/Add_AT_Component" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component" property="dc:title">Add Component</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/search_advanced" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/search_advanced" property="dc:title"></a>
+						</li>
+					
+		        </ul>
+			</div>
+		</div>
+	</footer>
+	<!-- Scripts -->
+
+	<!-- Depending on browser support load the zepto-pack or the jquery-pack. 
+		As configured (see grunt-config.json) this includes: 
+		 - modernizr, 
+		 - zepto OR jquery
+		 - foundation.topbar.js
+
+		condition jquery or zepto adapted from: 
+		http://foundation.zurb.com/docs/javascript.html
+	-->
+	<script>
+	  document.write('<script src=/scripts/'
+	    + ('__proto__' in {} ? 'zepto' : 'jquery')
+	    + '-pack.min.js><\/script>');
+	</script>
+	<script>
+		//init all foundation plugins. 
+		//Currently this only includes foundation.topbar.js
+		//See http://foundation.zurb.com/docs/javascript.html
+		$(document).foundation();
+	</script>
+	<script defer="defer"  src="http://deinhofer.github.io/zurb-foundation.docpad//scripts/app.js"></script><script defer="defer"  src="http://deinhofer.github.io/zurb-foundation.docpad//scripts/script.js"></script>
+</body>
+</html>

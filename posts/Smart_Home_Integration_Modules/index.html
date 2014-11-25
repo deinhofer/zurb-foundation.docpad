@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title>Smart Home Integration Modules | D-Space - Assistive Technology Component Repository</title>
+	<meta name="description" content="When your website appears in search results in say Google, the text here will be shown underneath your website's title." />
+	<meta name="keywords" content="place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website" />
+	<meta name="author" content="Martin Deinhofer" />
+
+	<!-- Output DocPad produced meta elements -->
+	<meta name="generator" content="DocPad v6.57.3" />
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- Styles -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro' rel='stylesheet' type='text/css'>
+	<link  rel="stylesheet" href="http://deinhofer.github.io/zurb-foundation.docpad//styles/zurb-foundation.css" /><link  rel="stylesheet" href="http://deinhofer.github.io/zurb-foundation.docpad//styles/style.css" /><link  rel="stylesheet" href="http://deinhofer.github.io/zurb-foundation.docpad//styles/highlightjs-github.css" />
+
+</head>
+<body >
+	<div id='layout'>
+	    <nav class="container top-bar" style="">
+	        <ul class=" title-area">
+	          <li class="name">
+	            <h1><a href="http://deinhofer.github.io/zurb-foundation.docpad//"> D-Space - Assistive Technology Component Repository</a></h1>
+	          </li>
+	          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	        </ul>  
+	        <section class="top-bar-section">
+	          <ul class="right">
+	          	
+	          	<li class="divider hide-for-small"></li>
+					<li typeof="sioc:Page" about="/pages/about" class="">
+						<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/about" property="dc:title">About</a>
+					</li>
+				
+	          	<li class="divider hide-for-small"></li>
+					<li typeof="sioc:Page" about="/pages/search" class="">
+						<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/search" property="dc:title">Search</a>
+					</li>
+				
+	          	<li class="divider hide-for-small"></li>
+					<li typeof="sioc:Page" about="/pages/Add_AT_Component" class="">
+						<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component" property="dc:title">Add Component</a>
+					</li>
+				
+	          </ul>
+	        </section>
+	    </nav>
+		<div role="main">
+			<article id="post" class="post">
+
+	<div class="row">
+		<div class="columns post-content">
+			<h1>Smart Home Integration Modules</h1>
+			<h2 id="contents">Contents</h2>
+<p><a href="#Component_Description">Component Description</a></p>
+<p><a href="#Potential_Applications">Potential Applications</a></p>
+<p><a href="#Technologies">Technologies</a></p>
+<p><a href="#Data_interface_for_KNX_component">Data interface for KNX component</a></p>
+<ul>
+<li><a href="#Input_Ports">Input Ports</a></li>
+<li><a href="#Properties">Properties</a></li>
+<li><a href="#Event_Listeners">Event Listeners</a></li>
+<li><a href="#Events_Triggers">Events Triggers</a></li>
+</ul>
+<p><a href="#Data_interface_for_enOcean_component">Data interface for enOcean component</a></p>
+<ul>
+<li><a href="#Input_Ports_2">Input Ports</a></li>
+<li><a href="#Properties_2">Properties</a></li>
+<li><a href="#Event_Listeners_2">Event Listeners</a></li>
+<li><a href="#Events_Triggers_2">Events Triggers</a></li>
+</ul>
+<p><a href="#Licence_Information">Licence Information</a></p>
+<p><a href="#Further_Resources">Further Resources</a></p>
+<hr>
+<h2 id="smart-home-integration-modules">Smart Home Integration Modules</h2>
+<p>Keywords: Assistive Technologies, Sensor, Actuator, Microcontroller, KNX, EnOcean, Environmental Control Systems, Contact: <a href="/FHTW" title="FHTW">FHTW</a></p>
+<h3 id="component-description">Component Description</h3>
+<p>Several components provide access to standardized building automation and smart home control systems: The KNX component interfaces with a KNX-IP router which connects a <a href="http://www.knx.org" title="http://www.knx.org">KNX</a> network with various actuators and sensors. The KNX network is configured via the ETS software which makes it possible to assign group- and device addresses to the sensors and actuators, which can then be accessed from the AsTeRICS KNX plugin. The underlying software library for the KNX-specific functionalities is <a href="http://sourceforge.net/p/calimero/wiki/Home/" title="http://sourceforge.net/p/calimero/wiki/Home/">Calimero</a></p>
+<p><a href="http://www.enocean.com/en/home/" title="http://www.enocean.com/en/home/">EnOcean</a> is an engergy-harvesting wireless sensor network widely used in home- and building automation tasks. As KNX, enOcean provides many different sensors and actuators for smart home control and management. This component utilizes the Priscilla java library for the EnOcean implementation. The EnOcean plugin provides an interface to the EnOcean sensors over an USB stick (EnOcean USB300) or an IP gateway. Interfacing to EnOcean devices is possible either by sending different data to actuators or receiving different types of values. This allows control of lightning, heat and ventilation devices and many more via the AsTeRICS platform.</p>
+<h3 id="potential-applications">Potential Applications</h3>
+<ul>
+<li>Controlling lighting, heating/ventilation, blend motors, and many other building automation devices and facilities with alternative user interfaces / GUI</li>
+<li>Using KNX / EnOcean sensors for assistive purposes</li>
+</ul>
+<h3 id="technologies">Technologies</h3>
+<p>The components are realized as part of the building block <a href="/AsTeRICS_AT_Modules" title="AsTeRICS AT Modules">AsTeRICS AT Modules</a> which provide the AsTeRICS Runtime Environment (ARE) that forwards the data to a websocket interface or vice versa from a websocket interface to the KNX, and enOcean components.</p>
+<h4 id="data-interface-for-knx-component">Data interface for KNX component</h4>
+<p>The KNX plugin establishes a connection to the KNX gateway specified by the plugin properties. The plugin has three different possibilities to interface KNX datapoints. The easiest way is to use the slider input ports, which are intended to be used to control dimming actuators. These ports always expect integer values (ports are of the type double but these are typecasted) and forward the value to a groupaddress specified by the plugin properties. The second way to send data to a KNX data point is by the 6 event listeners. Each of them can be configured individually by the plugin properties. The most universal way to send KNX commands is to use the command input of the KNX plugin. It expects a special formatted string and parses the dedicated keywords and format to a KNX command. The string can be assembled individually with other string formatting plugins. The KNX plugin has also some Event Trigger which can be assigned to various KNX Group Addresses within the properties. The KNX plugin listens to the bus and each time a massage with a specified Trigger Group Address is recognized an Event Trigger is issued. This kind of event handling requires dedicated KNX infrastructure setup.</p>
+<h5 id="input-ports">Input Ports</h5>
+<ul>
+<li>command [string]: This port receives string commands for the KNX component. The commands have to be in the format &quot;@KNX: group_address#type#value&quot;. An example for a valid command is&quot;@KNX:1/1/1#boolean#true&quot;. As a valid command is received by the input port, the value is sent to the KNX group address. The group addresses comply to the setup of the KNX network which can be configured with the ETS software.</li>
+<li>slider[1-6] [double]: Input port for a double value which is converted to an integer and forwarded to a dedicated KNX datapoint</li>
+</ul>
+<h5 id="properties">Properties</h5>
+<ul>
+<li>localIP [string]: The local IP address of the interface which can reach the KNXnetIP.</li>
+<li>KNXNetIP [string]: The destination IP address of the KNX gateway.</li>
+<li>NAT [boolean]: Enable Network Address Translation</li>
+<li>groupAddress[1-6] [string]: (Event Listener) Specifies KNX group addresses for the [n] Event Listener e.g. &quot;1/1/1&quot;.</li>
+<li>dataType[1-6] [string]: (Event Listener) Specifies the data type of the dataValue[1-6] which is send to the KNX datapoint. The data type for values to be sent to the KNX group addresses. Following type are supported: boolean, int, float, string</li>
+<li>dataValue[1-6] [string]: (Event Listener) Specifies the data which will be converted to the coresponding data type.</li>
+<li>groupAddressSlider[1-6] [string]: Specifies KNX group addresses for the Slider[n].</li>
+<li><p>groupAddressTrigger[1-6] [string]: Specifies KNX group addresses for the Event Trigger [n].</p>
+</li>
+<li><p>A0 - A5 [integer]: The readings of the 6 analog channels of the Arduino (0-1023)</p>
+</li>
+</ul>
+<h5 id="event-listeners">Event Listeners</h5>
+<ul>
+<li>send[1-6]: Each time a event is triggered, the coresponding KNX command which is specified in the plugin properties, is issued.</li>
+</ul>
+<h5 id="events-triggers">Events Triggers</h5>
+<ul>
+<li>event_out_[1-6]: Each time a event is triggered, the coresponding KNX command which is specified in the plugin properties, is issued.</li>
+</ul>
+<h4 id="data-interface-for-enocean-component">Data interface for enOcean component</h4>
+<p>The EnOcean plugin establishes a connection to the EnOcean gateway specified by the plugin properties (defined by gatewayIP and USB checkbox). The gatewayIP is either the IP adress of the gateway or the COM port name (e.g. COM1 or /dev/ttyUSB0). There are 3 different ways of sending data to EnOcean devices. The first one is done by the 6 input slider ports. Each of them has properties for the source device ID (range: 0-127) and a data type (binary, temperature, illumination, humidity, temperature set point and fan level). On every update of the input data, an EnOcean data frame is generated and sent. The second method is done over the event input ports. There are 3 properties to define. The device ID and the data type have equal possible values as with the slider input. The third property defines the value to be sent. The first method is the most flexible one, by sending a command string to the command input port. It expects a special formatted string and parses the dedicated keywords and format to an EnOcean command. The string can be assembled individually with other string formatting plugins. Receiving sensor data is done by combining event and output ports. There are 2 properties, one for the type of input data (the data type are the same as stated before) and one for the source device ID (this property is a hexadecimal string, containing the full 32bit ID, printed on the sensor). The event ports are triggered each time, an event with the defined type and device ID is received. If an event is raised, at the same time the corresponding data value is available at the output ports.</p>
+<h5 id="input-ports">Input Ports</h5>
+<ul>
+<li>command [string]: This port receives string commands for the EnOcean devices. The commands have to be in the format &quot;@ENOCEAN:device_id#type#value&quot;. An example for a valid command is&quot;@ENOCEAN:25#binary#true&quot;. As a valid command is received by the input port, the value and data type is broadcasted to the devices with the given device ID offset (range: 0-127)</li>
+<li>slider[1-6] [double]: Input port for a double value which is converted to an integer (or another type, depends on the datatype) and broadcasted to all EnOcean devices in range</li>
+</ul>
+<h5 id="properties">Properties</h5>
+<ul>
+<li>localIP [string]: The local IP address of the interface which can reach the IP gateway.</li>
+<li>gatewayIP [string]: The destination IP address of the EnOcean gateway or the device name of the USB gateway (emulates a serial interface, e.g. COM1 or /dev/ttyUSB0)</li>
+<li>USB [boolean]: If checked, then the connection will be established through a serial interface, otherwise through an IP gateway</li>
+<li>id[1-6] [integer]: Source ID for input event[n]. The range is from 0 to 127.</li>
+<li>sendType[1-6] [string]: Send type for input event[n]. Following data types are allowed global (for every datatype property, port and event): binary, temperature, illumination, humidity, setpoint, fan</li>
+<li>dataValue[1-6] [string]: The transmitted value for the input event [n] with the given id[n] and type (sendType[n])</li>
+<li>IDSlider[1-6] [string]: Source ID for slider[n]. The range is from 0 to 127.</li>
+<li>sendTypeSlider[1-6] [string]: The data type for sending slider[n] data with IDSLider[n]. The possible data types are stated above</li>
+<li>IDTrigger[1-6] [string]: Source ID for event trigger[n]. This is a full id, as printed on the device as 6 character string(e.g. FFEFA01C)</li>
+<li>TypeTrigger[1-6] [string]: The data type for the listening event[n]. If an incoming frame from the give ID (IDTrigger[n]) contains this data type, an event on event port [n] is raised. The possible data types are stated above</li>
+</ul>
+<h5 id="event-listeners">Event Listeners</h5>
+<ul>
+<li>send[1-6]: Each time a event is triggered, the coresponding EnOcean frame which is specified in the plugin properties, is transmitted.</li>
+</ul>
+<h5 id="events-triggers">Events Triggers</h5>
+<ul>
+<li>event_out_[1-6]: Each time a frame is received with the given parameters (from properties IDTrigger[n] and TypeTrigger[n]), this event is raised</li>
+</ul>
+<h3 id="licence-information">Licence Information</h3>
+<p>Originally, the AsTeRICS Runtime Environment (ARE) was licensed under GPLv3. <a href="http://www.asterics.eu/download/Licenses.pdf">[1]</a> For usage within the P4ALL/GPII project, the ARE and dedicated building blocks can be relicensed under a less restrictive licence. For more information please contact <a href="/FHTW" title="FHTW">FHTW</a>.</p>
+<p>The Priscilla Library used for the EnOcean component is (C)opyrighted by UAS FH Technikum Wien and released under the GNU Lesser General Public License (LGPL).</p>
+<h3 id="further-resources">Further Resources</h3>
+<p><a href="http://www.knx.org" title="http://www.knx.org">KNX</a></p>
+<p><a href="http://www.enocean.com/en/home/" title="http://www.enocean.com/en/home/">EnOcean</a></p>
+<p><a href="http://www.asterics.eu/index.php?id=88" title="http://www.asterics.eu/index.php?id=88">AsTeRICS homepage</a></p>
+<p><a href="http://www.asterics.eu/index.php?id=55" title="http://www.asterics.eu/index.php?id=55">Videos/Demos</a></p>
+<p><a href="http://www.asterics.eu/index.php?id=26" title="http://www.asterics.eu/index.php?id=26">Downloads and Documentation</a></p>
+<p><a href="https://github.com/asterics/AsTeRICS" title="https://github.com/asterics/AsTeRICS">Code Repository</a></p>
+
+		</div>
+	</div>
+</article>
+
+
+<div class="row">
+
+
+	
+</div>
+		</div>
+	    <div id='layout_footer'></div>
+	</div>
+	<footer id='footer' class="panel">
+		<div class="row">
+			<div class="columns large-5 small-12">
+			&copy; GPII Inc. 2014
+			</div>
+			<div class="columns large-7 small-12 ">
+				<ul class="inline-list foot-right">
+		          	
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/about" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/about" property="dc:title">About</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/faq" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/faq" property="dc:title">FAQ</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/search" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/search" property="dc:title">Search</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/Add_AT_Component" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component" property="dc:title">Add Component</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/search_advanced" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/search_advanced" property="dc:title"></a>
+						</li>
+					
+		        </ul>
+			</div>
+		</div>
+	</footer>
+	<!-- Scripts -->
+
+	<!-- Depending on browser support load the zepto-pack or the jquery-pack. 
+		As configured (see grunt-config.json) this includes: 
+		 - modernizr, 
+		 - zepto OR jquery
+		 - foundation.topbar.js
+
+		condition jquery or zepto adapted from: 
+		http://foundation.zurb.com/docs/javascript.html
+	-->
+	<script>
+	  document.write('<script src=/scripts/'
+	    + ('__proto__' in {} ? 'zepto' : 'jquery')
+	    + '-pack.min.js><\/script>');
+	</script>
+	<script>
+		//init all foundation plugins. 
+		//Currently this only includes foundation.topbar.js
+		//See http://foundation.zurb.com/docs/javascript.html
+		$(document).foundation();
+	</script>
+	<script defer="defer"  src="http://deinhofer.github.io/zurb-foundation.docpad//scripts/app.js"></script><script defer="defer"  src="http://deinhofer.github.io/zurb-foundation.docpad//scripts/script.js"></script>
+</body>
+</html>

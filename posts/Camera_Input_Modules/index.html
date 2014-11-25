@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title>Camera Input Modules | D-Space - Assistive Technology Component Repository</title>
+	<meta name="description" content="When your website appears in search results in say Google, the text here will be shown underneath your website's title." />
+	<meta name="keywords" content="place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website" />
+	<meta name="author" content="Martin Deinhofer" />
+
+	<!-- Output DocPad produced meta elements -->
+	<meta name="generator" content="DocPad v6.57.3" />
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- Styles -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro' rel='stylesheet' type='text/css'>
+	<link  rel="stylesheet" href="http://deinhofer.github.io/zurb-foundation.docpad//styles/zurb-foundation.css" /><link  rel="stylesheet" href="http://deinhofer.github.io/zurb-foundation.docpad//styles/style.css" /><link  rel="stylesheet" href="http://deinhofer.github.io/zurb-foundation.docpad//styles/highlightjs-github.css" />
+
+</head>
+<body >
+	<div id='layout'>
+	    <nav class="container top-bar" style="">
+	        <ul class=" title-area">
+	          <li class="name">
+	            <h1><a href="http://deinhofer.github.io/zurb-foundation.docpad//"> D-Space - Assistive Technology Component Repository</a></h1>
+	          </li>
+	          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	        </ul>  
+	        <section class="top-bar-section">
+	          <ul class="right">
+	          	
+	          	<li class="divider hide-for-small"></li>
+					<li typeof="sioc:Page" about="/pages/about" class="">
+						<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/about" property="dc:title">About</a>
+					</li>
+				
+	          	<li class="divider hide-for-small"></li>
+					<li typeof="sioc:Page" about="/pages/search" class="">
+						<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/search" property="dc:title">Search</a>
+					</li>
+				
+	          	<li class="divider hide-for-small"></li>
+					<li typeof="sioc:Page" about="/pages/Add_AT_Component" class="">
+						<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component" property="dc:title">Add Component</a>
+					</li>
+				
+	          </ul>
+	        </section>
+	    </nav>
+		<div role="main">
+			<article id="post" class="post">
+
+	<div class="row">
+		<div class="columns post-content">
+			<h1>Camera Input Modules</h1>
+			<h2 id="contents">Contents</h2>
+<p><a href="#Component_Description">Component Description</a></p>
+<p><a href="#Potential_Applications">Potential Applications</a></p>
+<p><a href="#Technologies">Technologies</a></p>
+<p><a href="#Operating_System">Operating System</a></p>
+<p><a href="#Languages.2FLibraries">Languages/Libraries</a></p>
+<p><a href="#Data_interface_for_the_FacetrackerLK_Module">Data interface for the FacetrackerLK Module</a></p>
+<ul>
+<li><a href="#Output_Ports">Output Ports</a></li>
+<li><a href="#Event_Listeners">Event Listeners</a></li>
+<li><a href="#Properties">Properties</a></li>
+</ul>
+<p><a href="#Data_interface_for_the_Eyetracker_Module">Data interface for the Eyetracker Module</a></p>
+<ul>
+<li><a href="#Input_Ports">Input Ports</a></li>
+<li><a href="#Output_Ports_2">Output Ports</a></li>
+<li><a href="#Event_Listener_Ports">Event Listener Ports</a></li>
+<li><a href="#Event_Listener_Ports_2">Event Listener Ports</a></li>
+<li><a href="#Properties_2">Properties</a></li>
+</ul>
+<p><a href="#Licence_Information">Licence Information</a></p>
+<p><a href="#Further_Resources">Further Resources</a></p>
+<hr>
+<h2 id="camera-input-modules">Camera Input Modules</h2>
+<p>Keywords: Assistive Technologies, Camera Input, Webcam, Facetracking, Mouse Emulation ,Contact: <a href="/FHTW" title="FHTW">FHTW</a></p>
+<h3 id="component-description">Component Description</h3>
+<p>The camera input modules /(FacetrackerLK and EyeTracker) use a standard webcam or external camera and provide extracted computer vision features like the estimated positions of a users face / nose / chin or the eye pupil position in a live camera image.</p>
+<h3 id="potential-applications">Potential Applications</h3>
+<p>Use head movements, facial features or eye gaze</p>
+<ul>
+<li>to control mouse cursor</li>
+<li>to perform selections in an on-screen keyboard or menu</li>
+<li>for accessible gaming</li>
+</ul>
+<h3 id="technologies">Technologies</h3>
+<p>The underlying mechanism build upon the <a href="http://opencv.org/" title="http://opencv.org/">OpenCV library</a> (in particular the cascade of haar-like features, the optical flow algorithm and template mathching).</p>
+<p>The components are realized as part of the building block <a href="/AsTeRICS_AT_Modules" title="AsTeRICS AT Modules">AsTeRICS AT Modules</a> which provides the AsTeRICS Runtime Environment (ARE) that forwards the data to a websocket interface or vice versa from a websocket interface to the component. Data is provided as continous data stream. The camera can be controlled through plugin properties and events.</p>
+<h4 id="operating-system">Operating System</h4>
+<ul>
+<li>Windows XP, Vista, 7, 8</li>
+</ul>
+<h4 id="languages-libraries">Languages/Libraries</h4>
+<ul>
+<li><a href="http://opencv.org/" title="http://opencv.org/">OpenCV library</a></li>
+</ul>
+<h4 id="data-interface-for-the-facetrackerlk-module">Data interface for the FacetrackerLK Module</h4>
+<p>(for an explaination of the terms &quot;port&quot;, &quot;event listener&quot;, &quot;event trigger&quot; and &quot;property&quot; please refer to <a href="/AsTeRICS_AT_Modules" title="AsTeRICS AT Modules">AsTeRICS AT Modules</a>)</p>
+<h5 id="output-ports">Output Ports</h5>
+<ul>
+<li>noseX [integer]: This value specifies the relative change in the x coordinate of the user&#39;s nose with respect to the previous image frame.</li>
+<li>noseY [integer]: This value specifies the relative change in the y coordinate of the user&#39;s nose with respect to the previous image frame.</li>
+<li>chinX [integer]: This value specifies the relative change in the x coordinate of the user&#39;s chin with respect to the previous image frame.</li>
+<li>chinY [integer]: This value specifies the relative change in the y coordinate of the user&#39;s chin with respect to the previous image frame.</li>
+</ul>
+<h5 id="event-listeners">Event Listeners</h5>
+<ul>
+<li>init: if this action is triggered, the face recognition procedure is initiated. This can be useful if the correct face position has been lost due to drifting of the LK algorithm.</li>
+<li>showCameraSettings: Triggers the opening of the settings window for the camera device, where parameters like image brightness or contrast can be adjusted.</li>
+<li>saveProfile: The camera profile is saved.</li>
+</ul>
+<h5 id="properties">Properties</h5>
+<ul>
+<li>cameraSelection [string, combobox selection]: using this property, the utilized camera can be chosen. Possible values range from “first camera” to “fith camera”. If only one camera is available in the system, “first camera” shall be chosen.</li>
+<li>cameraResolution [string, combobox selection]: This selection box provides several standard camera resolutions. Changing the resolution affects accuracy and performance (CPU load of the runtime system). Provided selections include “160x120”, “320x240”, “640x480”, “800x600”, “1024x768” and “1600x1200”. If the selectied resolution cannot be delivered by the image acquisition device, the next matching resolution is chosen by the plugin.</li>
+<li>cameraDisplayUpdate [integer]: This property allows to select the update rate for the camera display in milliseconds. If “0” milliseconds is chosen, no window for the live-video will be displayed. If “100” is chosen, the live image window will be updated 10 times a second. Please note that this property does not influence the frame rate of the camera nor the processing interval for new camera frames, only the display in the GUI is adjusted.</li>
+<li>cameraProfile [string]: Filename of the camera profile.</li>
+</ul>
+<h4 id="data-interface-for-the-eyetracker-module">Data interface for the Eyetracker Module</h4>
+<p>(for an explaination of the terms &quot;port&quot;, &quot;event listener&quot;, &quot;event trigger&quot; and &quot;property&quot; please refer to <a href="/AsTeRICS_AT_Modules" title="AsTeRICS AT Modules">AsTeRICS AT Modules</a>)</p>
+<p>This plugin provides several modes of operation:</p>
+<ul>
+<li>only blob tracking In this mode, the plugin just outputs the x/y coordinates of a round surface detected in the live camera images. No calibration procedure is needed. The plugins starts immediately with the coordinate output at the ports &quot;x&quot; and &quot;y&quot;. A possible application for this mode is tracking of a round marker which could be placed anywhere on the body.</li>
+<li>calibrated eye tracking In this mode, the plugin expects close-up images of an eye, recorded by a head-mounted setup. The suggested hardware configuration is the AsTeRICS headmounted SVM system (see image below). The eye-pupil location is determined and mapped to an estimated position at the computer screen where the person is looking at. For this mode, the plugins needs to be calibrated. First, a rectangular region of interest (ROI) has to be selected by clicking into the live camera image while holding the CTRL/STRG key. The ROI should cover the area where the eyeball is moving when the user is looking in different directions. Then, the calibration sequence can be started by sending an event to the &quot;calibrate&quot; event listener port. During calibration, the cursor is moved to several locations on the screen and the user is supposed to look at these positions without moving the head. The changing of the cursor position is indicated with an acoustic signal. Calibration succeeds if all calibration location can be recorded without excessively distorted values. If the calibration cannot be accomplished successfully, an acoustic signal is emitted and the Eyetracker plugin does not start to put out x/y data. In this case the calibration procedure has to be repeated.</li>
+</ul>
+<p>The coordinate-output of the eye tracking is only working correctly if no head movements occur. Any head movement will compromise the correctness of the x/y estimation for the cursor position.</p>
+<ul>
+<li>calibrated eye tracking with head pose estimation. This mode is an extension of the &quot;calibrated eye tracking&quot; mode. The calibration has to be performed as above. Additionally to the head-mounted camera, an external LED-frame mounted on the computer monitor is used to minimize the negative effects of head movements to the tracking accuracy. Please note that this mode needs the head-mounted SVM device plus the external Led-Frame.</li>
+</ul>
+<h5 id="input-ports">Input Ports</h5>
+<ul>
+<li>pt1x - pt4x [integer]:</li>
+<li>pt1y - pt4y [integer]: These 8 input ports can be connected to the corresponding output ports of the Sensorboard plugin. The Sensorboard delivers the location of 4 IR-led tracking points in the field-of-view of the IR-object-tracking camera of the headmounted SVM. This information can be used to compensate the head movement to increase gaze estimation stability. The 8 input ports have to be synchronized (turn the synchronized-property on for every input port).</li>
+</ul>
+<h5 id="output-ports">Output Ports</h5>
+<ul>
+<li>x [integer]: The x-coordinate delivered by the tracking algorithm. The meaning of this value depends on the selected mode.</li>
+<li>y [integer]: The y-coordinate delivered by the tracking algorithm. The meaning of this value depends on the selected mode.</li>
+</ul>
+<h5 id="event-listener-ports">Event Listener Ports</h5>
+<ul>
+<li>calibrate: if this event is triggered, calibration procedure for the Eyetracker is started (this is not relevant for the mode &quot;only blob tracking&quot;).</li>
+<li>offsetCorrection: this event is useful for eyetracking mode, when a drift of the cursor position has occured. When the event is triggered, the plugin stops the output of x/y coordinates for two seconds, where the user has time to fix the exact cursor position with the eyes. A new offset will be calculated to match the cursor position after the 2 seconds pause.</li>
+<li>showCameraSettings an incoming event displays the settings window for the camera device, where parameters like image brightness or contrast can be adjusted.</li>
+<li>togglePoseInfoWindow an incoming event displays the pose info window, where the current location of the 4 IR tracking points for head-pose compensation can be seen. For a normal head orientation these 4 points should be centered in the middle of the window (change the angle of the frontal camera to adjust the position of the yellow dots).</li>
+<li>startEvaluation an incoming event displays the accuracy evaluation window and starts evaluation. When the user follows the cross to 9 positions in the window, the x/y coordinates of the cursor are stored to a file in the ARE folder which can then be used to calculate and compare the gaze accuracy.</li>
+<li>saveProfile an incoming event saves the camera settings to a file of the given name (property cameraProfile). Use with caution - a saved settings-profile does only work with the same camera which was used to save the settings.</li>
+</ul>
+<h5 id="event-listener-ports">Event Listener Ports</h5>
+<ul>
+<li>blinkDetected: triggered if the blob detection is lost for a timespan bigger than minBlinkDuration and lower than maxBlinkDuration. This can be used for a single eye-blink detection.</li>
+<li>longBlinkDetected: triggered if the blob detection is lost for a timespan bigger than maxBlinkDuration. This can be used for a long eye-blink detection.</li>
+</ul>
+<h5 id="properties">Properties</h5>
+<ul>
+<li>cameraSelection [string, combobox selection]: using this property, the utilized camera can be chosen. Possible values range from “first camera” to “fith camera”. If only one camera is available in the system, “first camera” shall be chosen.</li>
+<li>cameraResolution [string, combobox selection]: This selection box provides several standard camera resolutions. Changing the resolution affects accuracy and performance (CPU load of the runtime system). Provided selections include “160x120”, “320x240”, “640x480”, “800x600”, “1024x768” and “1600x1200”. If the selectied resolution cannot be delivered by the image acquisition device, the next matching resolution is chosen by the plugin.</li>
+<li>cameraProfile [string] a filename for the camera settings profile to be saved (property cameraProfile). Use with caution - a saved settings-profile does only work with the same camera which was used to save the settings.</li>
+<li>cameraDisplayUpdate [integer]: This property allows to select the update rate for the camera display in milliseconds. If “0” milliseconds is chosen, no window for the live-video will be displayed. If “100” is chosen, the live image window will be updated 10 times a second. This property does not influence the frame rate of the camera nor the processing interval for new camera frames, only the display in the GUI is adjusted.</li>
+<li>tracking mode [string, combobox selection]: The selection of the plugin&#39;s mode of operation (&quot;only blob tracking&quot;, &quot;calibrated eye tracking&quot;, or &quot;calibrated eye tracking with head pose estimation&quot;)</li>
+<li>xMin [integer]: the minimum value for the x-coordinate output</li>
+<li>xMax [integer]: the maximum value for the x-coordinate output. If &quot;0&quot; is selected, the plugins auto-detects the screen resolution and uses the X-Size of the computer screen.</li>
+<li>yMin [integer]: the minimum value for the y-coordinate output</li>
+<li>yMax [integer]: the maximum value for the y-coordinate output. If &quot;0&quot; is selected, the plugins auto-detects the screen resolution and uses the Y-Size of the computer screen.</li>
+<li>calibrationStepsX [integer]: the number of rows for generating calibration positions</li>
+<li>calibrationStepsY [integer]: the number of columns for generating calibration positions. For example: if 4 x-steps and 3 y-steps are chosen, the user has to look at 12 cursor positions during the calibration phase. More positions increase the gaze-tracking accuracy but result in a longer calibration phase.</li>
+<li>averaging [integer]: the length of the averaging window for smoothening the ouput values.</li>
+<li>screenSize [double]: the diameter of the computer screen (important if head pose correction is used)</li>
+<li>minBlinkDuration [integer]: the minimum time for a short blink to be detected (a short blink is detected if the blink time is bigger than minBlinkDuration and lower than maxBlinkDuration.</li>
+<li>maxBlinkDuration [integer]: the maximum time for a short blink to be detected (a long blink is detected if the blink time is bigger than maxBlinkDuration).</li>
+</ul>
+<h3 id="licence-information">Licence Information</h3>
+<p>Originally, the AsTeRICS Runtime Environment (ARE) was licensed under GPLv3. <a href="http://www.asterics.eu/download/Licenses.pdf">[1]</a> For usage within the P4ALL/GPII project, the ARE and dedicated building blocks can be relicensed under a less restrictive licence. For more information please contact <a href="/FHTW" title="FHTW">FHTW</a>.</p>
+<h3 id="further-resources">Further Resources</h3>
+<p><a href="http://www.asterics.eu/index.php?id=88" title="http://www.asterics.eu/index.php?id=88">AsTeRICS homepage</a></p>
+<p><a href="http://www.asterics.eu/index.php?id=55" title="http://www.asterics.eu/index.php?id=55">Videos/Demos</a></p>
+<p><a href="http://www.asterics.eu/index.php?id=26" title="http://www.asterics.eu/index.php?id=26">Downloads and Documentation</a></p>
+<p><a href="https://github.com/asterics/AsTeRICS" title="https://github.com/asterics/AsTeRICS">Code Repository</a></p>
+
+		</div>
+	</div>
+</article>
+
+
+<div class="row">
+
+
+	
+</div>
+		</div>
+	    <div id='layout_footer'></div>
+	</div>
+	<footer id='footer' class="panel">
+		<div class="row">
+			<div class="columns large-5 small-12">
+			&copy; GPII Inc. 2014
+			</div>
+			<div class="columns large-7 small-12 ">
+				<ul class="inline-list foot-right">
+		          	
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/about" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/about" property="dc:title">About</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/faq" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/faq" property="dc:title">FAQ</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/search" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/search" property="dc:title">Search</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/Add_AT_Component" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component" property="dc:title">Add Component</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/search_advanced" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/search_advanced" property="dc:title"></a>
+						</li>
+					
+		        </ul>
+			</div>
+		</div>
+	</footer>
+	<!-- Scripts -->
+
+	<!-- Depending on browser support load the zepto-pack or the jquery-pack. 
+		As configured (see grunt-config.json) this includes: 
+		 - modernizr, 
+		 - zepto OR jquery
+		 - foundation.topbar.js
+
+		condition jquery or zepto adapted from: 
+		http://foundation.zurb.com/docs/javascript.html
+	-->
+	<script>
+	  document.write('<script src=/scripts/'
+	    + ('__proto__' in {} ? 'zepto' : 'jquery')
+	    + '-pack.min.js><\/script>');
+	</script>
+	<script>
+		//init all foundation plugins. 
+		//Currently this only includes foundation.topbar.js
+		//See http://foundation.zurb.com/docs/javascript.html
+		$(document).foundation();
+	</script>
+	<script defer="defer"  src="http://deinhofer.github.io/zurb-foundation.docpad//scripts/app.js"></script><script defer="defer"  src="http://deinhofer.github.io/zurb-foundation.docpad//scripts/script.js"></script>
+</body>
+</html>

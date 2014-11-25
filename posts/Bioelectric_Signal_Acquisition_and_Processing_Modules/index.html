@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title>Bioelectric Signal Acquisition and Processing Modules | D-Space - Assistive Technology Component Repository</title>
+	<meta name="description" content="When your website appears in search results in say Google, the text here will be shown underneath your website's title." />
+	<meta name="keywords" content="place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website" />
+	<meta name="author" content="Martin Deinhofer" />
+
+	<!-- Output DocPad produced meta elements -->
+	<meta name="generator" content="DocPad v6.57.3" />
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- Styles -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro' rel='stylesheet' type='text/css'>
+	<link  rel="stylesheet" href="http://deinhofer.github.io/zurb-foundation.docpad//styles/zurb-foundation.css" /><link  rel="stylesheet" href="http://deinhofer.github.io/zurb-foundation.docpad//styles/style.css" /><link  rel="stylesheet" href="http://deinhofer.github.io/zurb-foundation.docpad//styles/highlightjs-github.css" />
+
+</head>
+<body >
+	<div id='layout'>
+	    <nav class="container top-bar" style="">
+	        <ul class=" title-area">
+	          <li class="name">
+	            <h1><a href="http://deinhofer.github.io/zurb-foundation.docpad//"> D-Space - Assistive Technology Component Repository</a></h1>
+	          </li>
+	          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	        </ul>  
+	        <section class="top-bar-section">
+	          <ul class="right">
+	          	
+	          	<li class="divider hide-for-small"></li>
+					<li typeof="sioc:Page" about="/pages/about" class="">
+						<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/about" property="dc:title">About</a>
+					</li>
+				
+	          	<li class="divider hide-for-small"></li>
+					<li typeof="sioc:Page" about="/pages/search" class="">
+						<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/search" property="dc:title">Search</a>
+					</li>
+				
+	          	<li class="divider hide-for-small"></li>
+					<li typeof="sioc:Page" about="/pages/Add_AT_Component" class="">
+						<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component" property="dc:title">Add Component</a>
+					</li>
+				
+	          </ul>
+	        </section>
+	    </nav>
+		<div role="main">
+			<article id="post" class="post">
+
+	<div class="row">
+		<div class="columns post-content">
+			<h1>Bioelectric Signal Acquisition and Processing Modules</h1>
+			<h2 id="contents">Contents</h2>
+<p><a href="#Component_Descriptions">Component Descriptions</a></p>
+<p><a href="#Potential_Applications">Potential Applications</a></p>
+<p><a href="#Technologies">Technologies</a></p>
+<p><a href="#Data_interface_for_the_OpenEEG_.22p2_parser.22_component">Data interface for the OpenEEG &quot;p2 parser&quot; component</a></p>
+<ul>
+<li><a href="#Output_Ports">Output Ports</a></li>
+<li><a href="#Properties">Properties</a></li>
+</ul>
+<p><a href="#Licence_Information">Licence Information</a></p>
+<p><a href="#Further_Resources">Further Resources</a></p>
+<hr>
+<h2 id="bioelectric-signal-acquisition-and-processing-modules">Bioelectric Signal Acquisition and Processing Modules</h2>
+<p>Keywords: Assistive Technologies, bioelectric signals, openEEG, EMG, EOG, Contact: <a href="/FHTW" title="FHTW">FHTW</a></p>
+<h3 id="component-descriptions">Component Descriptions</h3>
+<p>Bioelectric signal acquisition can serve as a valuable input method for alternative computer interfaces for people with motor disabilities. Using bioelectic measurements liek the ElecroMyogram (EMG), the Electrooculogram (EOG) or the Electroencephalogram (EEG) allows mouse / keyboard control (and thereby full computer control) and even control of prosthesis or external appliances.</p>
+<p>Several initiatives have provided means for the affordable acquisition of bioelectric signals, including the openEEG and the openBCI projects. The AsTeRICS components described in this section provide raw data from those devices, which can then be used in futher assistive applications pr in dedicated AsTeRICS models</p>
+<h3 id="potential-applications">Potential Applications</h3>
+<ul>
+<li>Measure EMG, EEG or EOG and use these signals for controlling alternative human-computer interfaces</li>
+</ul>
+<h3 id="technologies">Technologies</h3>
+<p>The currently supported devices are:</p>
+<ul>
+<li>the <a href="http://openeeg.sourceforge.net/doc/modeeg/modeeg.html" title="http://openeeg.sourceforge.net/doc/modeeg/modeeg.html">Modular EEG</a> 6-channel EEG amplifier</li>
+<li>the <a href="https://www.olimex.com/Products/EEG/OpenEEG/EEG-SMT/open-source-hardware" title="https://www.olimex.com/Products/EEG/OpenEEG/EEG-SMT/open-source-hardware">Olimex SMT EEG</a></li>
+<li>the <a href="http://www.openbci.com/" title="http://www.openbci.com/">OpenBCI</a> 8-channel EEG/EMG/ECG amplifier</li>
+<li>other particular devices can be integrated upon request</li>
+</ul>
+<p>These devices transfer data to the connected computer via a COM port via a protocol. In case of the ModularEEG, this data protocol is called &quot;P2&quot;, and the plugin which supports the connection and provides the raw multichannel bioelectric signals is called &quot;P2 parser&quot;. The COM Port number where the device is connected must be specified in the plugin properties.</p>
+<h4 id="data-interface-for-the-openeeg-p2-parser-component">Data interface for the OpenEEG &quot;p2 parser&quot; component</h4>
+<p>(for an explaination of the terms &quot;port&quot;, &quot;event listener&quot;, &quot;event trigger&quot; and &quot;property&quot; please refer to AsTeRICS AT Modules)</p>
+<h5 id="output-ports">Output Ports</h5>
+<ul>
+<li>Channel1 to Channel6 [integer]: Each output corresponds to the sampled data from its corresponding channel. The values range for -512 to 512. A calibration procedure to obtain the factor for calculation of microvolts must be performed with the amplifier device.</li>
+</ul>
+<h5 id="properties">Properties</h5>
+<ul>
+<li>COMPort [String]: The name of the COM port, for example COM2 or COM17.</li>
+<li>Baudrate [Integer]: The baud rate for the transmission. Standard is 57600.</li>
+</ul>
+<h3 id="licence-information">Licence Information</h3>
+<p>Originally, the AsTeRICS Runtime Environment (ARE) was licensed under GPLv3. [1] For usage within the P4ALL/GPII project, the ARE and dedicated building blocks can be relicensed under a less restrictive licence. For more information please contact <a href="/FHTW" title="FHTW">FHTW</a>.</p>
+<h3 id="further-resources">Further Resources</h3>
+<p><a href="http://www.asterics.eu/index.php?id=88" title="http://www.asterics.eu/index.php?id=88">AsTeRICS homepage</a></p>
+<p><a href="http://www.asterics.eu/index.php?id=55" title="http://www.asterics.eu/index.php?id=55">Videos/Demos</a></p>
+<p><a href="http://www.asterics.eu/index.php?id=26" title="http://www.asterics.eu/index.php?id=26">Downloads and Documentation</a></p>
+<p><a href="https://github.com/asterics/AsTeRICS" title="https://github.com/asterics/AsTeRICS">Code Repository</a></p>
+
+		</div>
+	</div>
+</article>
+
+
+<div class="row">
+
+
+	
+</div>
+		</div>
+	    <div id='layout_footer'></div>
+	</div>
+	<footer id='footer' class="panel">
+		<div class="row">
+			<div class="columns large-5 small-12">
+			&copy; GPII Inc. 2014
+			</div>
+			<div class="columns large-7 small-12 ">
+				<ul class="inline-list foot-right">
+		          	
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/about" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/about" property="dc:title">About</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/faq" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/faq" property="dc:title">FAQ</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/search" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/search" property="dc:title">Search</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/Add_AT_Component" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component" property="dc:title">Add Component</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/search_advanced" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/search_advanced" property="dc:title"></a>
+						</li>
+					
+		        </ul>
+			</div>
+		</div>
+	</footer>
+	<!-- Scripts -->
+
+	<!-- Depending on browser support load the zepto-pack or the jquery-pack. 
+		As configured (see grunt-config.json) this includes: 
+		 - modernizr, 
+		 - zepto OR jquery
+		 - foundation.topbar.js
+
+		condition jquery or zepto adapted from: 
+		http://foundation.zurb.com/docs/javascript.html
+	-->
+	<script>
+	  document.write('<script src=/scripts/'
+	    + ('__proto__' in {} ? 'zepto' : 'jquery')
+	    + '-pack.min.js><\/script>');
+	</script>
+	<script>
+		//init all foundation plugins. 
+		//Currently this only includes foundation.topbar.js
+		//See http://foundation.zurb.com/docs/javascript.html
+		$(document).foundation();
+	</script>
+	<script defer="defer"  src="http://deinhofer.github.io/zurb-foundation.docpad//scripts/app.js"></script><script defer="defer"  src="http://deinhofer.github.io/zurb-foundation.docpad//scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title>Point and Control | D-Space - Assistive Technology Component Repository</title>
+	<meta name="description" content="When your website appears in search results in say Google, the text here will be shown underneath your website's title." />
+	<meta name="keywords" content="place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website" />
+	<meta name="author" content="Martin Deinhofer" />
+
+	<!-- Output DocPad produced meta elements -->
+	<meta name="generator" content="DocPad v6.57.3" />
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- Styles -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro' rel='stylesheet' type='text/css'>
+	<link  rel="stylesheet" href="http://deinhofer.github.io/zurb-foundation.docpad//styles/zurb-foundation.css" /><link  rel="stylesheet" href="http://deinhofer.github.io/zurb-foundation.docpad//styles/style.css" /><link  rel="stylesheet" href="http://deinhofer.github.io/zurb-foundation.docpad//styles/highlightjs-github.css" />
+
+</head>
+<body >
+	<div id='layout'>
+	    <nav class="container top-bar" style="">
+	        <ul class=" title-area">
+	          <li class="name">
+	            <h1><a href="http://deinhofer.github.io/zurb-foundation.docpad//"> D-Space - Assistive Technology Component Repository</a></h1>
+	          </li>
+	          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	        </ul>  
+	        <section class="top-bar-section">
+	          <ul class="right">
+	          	
+	          	<li class="divider hide-for-small"></li>
+					<li typeof="sioc:Page" about="/pages/about" class="">
+						<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/about" property="dc:title">About</a>
+					</li>
+				
+	          	<li class="divider hide-for-small"></li>
+					<li typeof="sioc:Page" about="/pages/search" class="">
+						<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/search" property="dc:title">Search</a>
+					</li>
+				
+	          	<li class="divider hide-for-small"></li>
+					<li typeof="sioc:Page" about="/pages/Add_AT_Component" class="">
+						<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component" property="dc:title">Add Component</a>
+					</li>
+				
+	          </ul>
+	        </section>
+	    </nav>
+		<div role="main">
+			<article id="post" class="post">
+
+	<div class="row">
+		<div class="columns post-content">
+			<h1>Point and Control</h1>
+			<h2 id="contents">Contents</h2>
+<p><a href="#Component_Description">Component Description</a></p>
+<p><a href="#Potential_Applications">Potential Applications</a></p>
+<p><a href="#Technologies">Technologies</a></p>
+<p><a href="#Licence_Information">Licence Information</a></p>
+<p><a href="#Status.2C_Known_Issues_.26_Planned_Work">Status, Known Issues &amp; Planned Work</a></p>
+<p><a href="#Further_Resources">Further Resources</a></p>
+<ul>
+<li><a href="#Videos.2FDemos">Videos/Demos</a></li>
+<li><a href="#Documentation.2FFAQs">Documentation/FAQs</a></li>
+<li><a href="#Related">Related</a></li>
+<li><a href="#Getting_Involved">Getting Involved</a></li>
+</ul>
+<hr>
+<h2 id="point-and-control">Point and Control</h2>
+<p>Keywords: remote control, smart home, Kinect, user location</p>
+<p>Contact: <a href="mailto:berning@teco.edu" title="mailto:berning@teco.edu">mailto:berning@teco.edu</a></p>
+<h3 id="component-description">Component Description</h3>
+<p>This system makes use of the Microsoft Kinect depth camera to enable Point&amp;Click interaction for the control of appliances in smart environments. A backend server determines through collision detection which device the user is pointing at and sends the respective control interface to the user&#39;s smartphone. Any commands the user issues are then sent back to the server which in turn controls the appliance. New devices can either be registered manually or using markers such as QR codes to identify them and get their position at the same time.</p>
+<h3 id="potential-applications">Potential Applications</h3>
+<p>Could be used in the scope of <a href="/URC" title="URC">URC</a> all supported systems, i.e. smart home scenarios (generally increases <a href="/UX" title="UX">UX</a>).</p>
+<p>It removes the need for browsing lists of devices in favour of spatial selection gestures, thus requires motor abilities and spatial cognition to do so.</p>
+<p>Particularly we expect a lower digital literacy need for using the system and also expect (in combination e.g. also with speech output) applications benefits for users with visual impairment or users who do not prefer small screens on mobile devices in general.</p>
+<h3 id="technologies">Technologies</h3>
+<p>The platform support is currently limited by the dependency on the Kinect sensor. The current implementation is based on the official Kinect for Windows SDK by Microsoft, which is only available for Windows 7 and above. The complete SDK is not needed for execution, but the redistributable files and drivers are currently not included in the repository. The code is written in C# tested with .Net 4.0 and above. The configuration and location of the devices in a 3D room layout is stored in a XML file which is read out during the initialization. Changes in the program are written back to the file. HTTP is used for communication between client and server and the remote control user interfaces are designed using HTML.</p>
+<p>A client on the smartphone of the user is required to interact with the system. The current implementation uses a native Android application with an integrated WebView (a simple HTML renderer) to display the remote control user interface. The application manages the connection to the server and provides the UI for registration and device selection.</p>
+<h3 id="licence-information">Licence Information</h3>
+<p>The code of the system is released under MIT License as stated in the repository.</p>
+<h3 id="status-known-issues-planned-work">Status, Known Issues &amp; Planned Work</h3>
+<p>The system works reliably with the first version of the Kinect sensor. Currently the device repository, device selection and control is integrated in a single component.</p>
+<p>Future Work:</p>
+<ul>
+<li>Test performance of Kinect One sensor</li>
+<li>Separate repository, selection and control into individual components, communicating via REST/JSON</li>
+<li>Structured API with documentation</li>
+<li>Migrate Android native app to web app</li>
+</ul>
+<h3 id="further-resources">Further Resources</h3>
+<h4 id="videos-demos">Videos/Demos</h4>
+<p>A video demonstrating the system can be found here: <a href="http://www.youtube.com/watch?v=RqlCYBIUMos" title="http://www.youtube.com/watch?v=RqlCYBIUMos">http://www.youtube.com/watch?v=RqlCYBIUMos</a></p>
+<h4 id="documentation-faqs">Documentation/FAQs</h4>
+<p>A paper abstract with more information on the system can be found here: <a href="http://www.teco.edu/~berning/papers/ubicomp2013_video.pdf" title="http://www.teco.edu/~berning/papers/ubicomp2013_video.pdf">http://www.teco.edu/~berning/papers/ubicomp2013_video.pdf</a></p>
+<h4 id="related">Related</h4>
+<p><a href="http://www.microsoft.com/en-us/kinectforwindows/" title="http://www.microsoft.com/en-us/kinectforwindows/">Kinect for Windows SDK and Documentation</a></p>
+<h4 id="getting-involved">Getting Involved</h4>
+<p>The code is hosted at github: <a href="https://github.com/teco-kit/PointAndControl" title="https://github.com/teco-kit/PointAndControl">https://github.com/teco-kit/PointAndControl</a> This is a public repository, so everybody can contribute. If you find any bugs, you can also open a new issue.</p>
+
+		</div>
+	</div>
+</article>
+
+
+<div class="row">
+
+
+	
+</div>
+		</div>
+	    <div id='layout_footer'></div>
+	</div>
+	<footer id='footer' class="panel">
+		<div class="row">
+			<div class="columns large-5 small-12">
+			&copy; GPII Inc. 2014
+			</div>
+			<div class="columns large-7 small-12 ">
+				<ul class="inline-list foot-right">
+		          	
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/about" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/about" property="dc:title">About</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/faq" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/faq" property="dc:title">FAQ</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/search" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/search" property="dc:title">Search</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/Add_AT_Component" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component" property="dc:title">Add Component</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/search_advanced" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/search_advanced" property="dc:title"></a>
+						</li>
+					
+		        </ul>
+			</div>
+		</div>
+	</footer>
+	<!-- Scripts -->
+
+	<!-- Depending on browser support load the zepto-pack or the jquery-pack. 
+		As configured (see grunt-config.json) this includes: 
+		 - modernizr, 
+		 - zepto OR jquery
+		 - foundation.topbar.js
+
+		condition jquery or zepto adapted from: 
+		http://foundation.zurb.com/docs/javascript.html
+	-->
+	<script>
+	  document.write('<script src=/scripts/'
+	    + ('__proto__' in {} ? 'zepto' : 'jquery')
+	    + '-pack.min.js><\/script>');
+	</script>
+	<script>
+		//init all foundation plugins. 
+		//Currently this only includes foundation.topbar.js
+		//See http://foundation.zurb.com/docs/javascript.html
+		$(document).foundation();
+	</script>
+	<script defer="defer"  src="http://deinhofer.github.io/zurb-foundation.docpad//scripts/app.js"></script><script defer="defer"  src="http://deinhofer.github.io/zurb-foundation.docpad//scripts/script.js"></script>
+</body>
+</html>

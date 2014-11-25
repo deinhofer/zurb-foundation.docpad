@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title>Open Source Input Transducer Prototyping Module | D-Space - Assistive Technology Component Repository</title>
+	<meta name="description" content="When your website appears in search results in say Google, the text here will be shown underneath your website's title." />
+	<meta name="keywords" content="place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website" />
+	<meta name="author" content="Martin Deinhofer" />
+
+	<!-- Output DocPad produced meta elements -->
+	<meta name="generator" content="DocPad v6.57.3" />
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- Styles -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro' rel='stylesheet' type='text/css'>
+	<link  rel="stylesheet" href="http://deinhofer.github.io/zurb-foundation.docpad//styles/zurb-foundation.css" /><link  rel="stylesheet" href="http://deinhofer.github.io/zurb-foundation.docpad//styles/style.css" /><link  rel="stylesheet" href="http://deinhofer.github.io/zurb-foundation.docpad//styles/highlightjs-github.css" />
+
+</head>
+<body >
+	<div id='layout'>
+	    <nav class="container top-bar" style="">
+	        <ul class=" title-area">
+	          <li class="name">
+	            <h1><a href="http://deinhofer.github.io/zurb-foundation.docpad//"> D-Space - Assistive Technology Component Repository</a></h1>
+	          </li>
+	          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	        </ul>  
+	        <section class="top-bar-section">
+	          <ul class="right">
+	          	
+	          	<li class="divider hide-for-small"></li>
+					<li typeof="sioc:Page" about="/pages/about" class="">
+						<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/about" property="dc:title">About</a>
+					</li>
+				
+	          	<li class="divider hide-for-small"></li>
+					<li typeof="sioc:Page" about="/pages/search" class="">
+						<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/search" property="dc:title">Search</a>
+					</li>
+				
+	          	<li class="divider hide-for-small"></li>
+					<li typeof="sioc:Page" about="/pages/Add_AT_Component" class="">
+						<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component" property="dc:title">Add Component</a>
+					</li>
+				
+	          </ul>
+	        </section>
+	    </nav>
+		<div role="main">
+			<article id="post" class="post">
+
+	<div class="row">
+		<div class="columns post-content">
+			<h1>Open Source Input Transducer Prototyping Module</h1>
+			<h2 id="contents">Contents</h2>
+<p><a href="#Component_Descriptions">Component Descriptions</a></p>
+<p><a href="#Potential_Applications">Potential Applications</a></p>
+<p><a href="#Technologies">Technologies</a></p>
+<p><a href="#Tool_chain_for_the_microcontroller">Tool chain for the microcontroller</a></p>
+<p><a href="#Data_interface">Data interface</a></p>
+<ul>
+<li><a href="#Input_Ports">Input Ports</a></li>
+<li><a href="#Output_Ports">Output Ports</a></li>
+<li><a href="#Event_listeners">Event listeners</a></li>
+<li><a href="#Event_Triggers">Event Triggers</a></li>
+<li><a href="#Properties">Properties</a></li>
+</ul>
+<p><a href="#Licence_Information">Licence Information</a></p>
+<p><a href="#Further_Resources">Further Resources</a></p>
+<hr>
+<h2 id="open-source-input-transducer-prototyping-module">Open Source Input Transducer Prototyping Module</h2>
+<p>Keywords: Assistive Technologies, Sensor, Actuator, Microcontroller, Arduino, teensy ,Contact: <a href="/FHTW" title="FHTW">FHTW</a></p>
+<h3 id="component-descriptions">Component Descriptions</h3>
+<p>Microcontroller boards provide a cost-effective and efficient solution to interface computers to the environment, measure sensor values or control actuators. For assisitve application in particular, microcontrollers can be interesting to explore alternative input methods or provide means to interact with or manipulate the environment.</p>
+<p>The Arduino component provides an interface to the popular <a href="http://arduino.cc/de/Main/ArduinoBoardUno" title="http://arduino.cc/de/Main/ArduinoBoardUno">Arduino Uno microcontroller</a> and makes available analog inputs and digital inputs and outputs. Similarily, an interface to the <a href="https://www.pjrc.com/teensy/" title="https://www.pjrc.com/teensy/">Teensy</a> controllers or other types of microcontroller platforms can be provided on demand.</p>
+<h3 id="potential-applications">Potential Applications</h3>
+<ul>
+<li>Measure analog data of a bend sensor, force sensor, accelerometer, gyrometer, pressure sensors, proximity sensors ...</li>
+<li>Attach (selfmade) switches/buttons as digital inputs to control computer applications or provide mouse/keyboard alternatives</li>
+<li>Use digital outputs to control actuators (on/off lights, servo motor,...)</li>
+</ul>
+<h3 id="technologies">Technologies</h3>
+<p>An Arduino UNO microcontroller board or a similar supported microcontroller has to be connected to an USB port. The Arduino CIM firmware must have been uploaded into the microcontroller&#39;s flash memory to communicate via the CIM protocol with the respective component of the AsTeRICS Runtime Environmnet. Data is provided as continous data stream. Events are triggered in the case of pin state changes. The state of pins can be controlled through Event listener ports.</p>
+<h4 id="tool-chain-for-the-microcontroller">Tool chain for the microcontroller</h4>
+<ul>
+<li><a href="http://winavr.sourceforge.net/" title="http://winavr.sourceforge.net/">WinAVR: C-Compiler, Tools,...</a></li>
+<li><a href="http://www.atmel.com/microsite/atmel_studio6/" title="http://www.atmel.com/microsite/atmel_studio6/">AVRStudio: IDE</a></li>
+</ul>
+<h4 id="data-interface">Data interface</h4>
+<p>(for an explaination of the terms &quot;port&quot;, &quot;event listener&quot;, &quot;event trigger&quot; and &quot;property&quot; please refer to <a href="/AsTeRICS_AT_Modules" title="AsTeRICS AT Modules">AsTeRICS AT Modules</a>)</p>
+<h5 id="input-ports">Input Ports</h5>
+<ul>
+<li>pwm3 [integer]: PWM channel 3, output value (range: 0-255). The output signal depends on the mode (PWM or servo PWM)</li>
+<li>pwm5 [integer]: PWM channel 5, output value (range: 0-255). The output signal depends on the mode (PWM or servo PWM)</li>
+<li>pwm6 [integer]: PWM channel 6, output value (range: 0-255). The output signal depends on the mode (PWM or servo PWM)</li>
+</ul>
+<h5 id="output-ports">Output Ports</h5>
+<ul>
+<li>A0 - A5 [integer]: The readings of the 6 analog channels of the Arduino (0-1023)</li>
+</ul>
+<h5 id="event-listeners">Event listeners</h5>
+<ul>
+<li>setPin2 - setPin13: An incoming event will set the corresponding digital output pin on the Arduino to high level (5V)</li>
+<li>clearPin2 - clearPin13: An incoming event will set the corresponding digital output pin on the Arduino to low level (0V)</li>
+</ul>
+<h5 id="event-triggers">Event Triggers</h5>
+<ul>
+<li>pin2ChangedToLow - pin13ChangedToLow: This event is triggered if the corresponding input pin on the Arduino switches from high to low level (connected to 0V)</li>
+<li>pin2ChangedToHigh - pin13ChangedToHigh: This event is triggered if the corresponding input pin on the Arduino switches from low to high level (connected to 5V)</li>
+</ul>
+<h5 id="properties">Properties</h5>
+<ul>
+<li>periodicADCUpdate [integer]: This property defines how often the ADC values are measured and put out on the ports A0-A5 (0=disable ADC)</li>
+<li>pin2Mode - pin13Mode [integer]: This property defines the mode of the Arduino Pins. The value can be selected via a ComboBox. Possible selections are:<ul>
+<li>not used</li>
+<li>Input without pullup resistor</li>
+<li>Input with pullup resistor</li>
+<li>output, default low</li>
+<li>output, default high</li>
+<li>PWM servo (PWM for servo driving, 1-2ms pulse), available only on pin 3,5 and 6</li>
+<li>500Hz PWM (normal 0-100% PWM), available only on pin 3,5 and 6</li>
+</ul>
+</li>
+</ul>
+<h3 id="licence-information">Licence Information</h3>
+<p>Originally, the AsTeRICS Runtime Environment (ARE) was licensed under GPLv3. [1] For usage within the P4ALL/GPII project, the ARE and dedicated building blocks can be relicensed under a less restrictive licence. For more information please contact <a href="/FHTW" title="FHTW">FHTW</a>.</p>
+<h3 id="further-resources">Further Resources</h3>
+<p><a href="http://www.asterics.eu/index.php?id=88" title="http://www.asterics.eu/index.php?id=88">AsTeRICS homepage</a></p>
+<p><a href="http://www.asterics.eu/index.php?id=55" title="http://www.asterics.eu/index.php?id=55">Videos/Demos</a></p>
+<p><a href="http://www.asterics.eu/index.php?id=26" title="http://www.asterics.eu/index.php?id=26">Downloads and Documentation</a></p>
+<p><a href="https://github.com/asterics/AsTeRICS" title="https://github.com/asterics/AsTeRICS">Code Repository</a></p>
+
+		</div>
+	</div>
+</article>
+
+
+<div class="row">
+
+
+	
+</div>
+		</div>
+	    <div id='layout_footer'></div>
+	</div>
+	<footer id='footer' class="panel">
+		<div class="row">
+			<div class="columns large-5 small-12">
+			&copy; GPII Inc. 2014
+			</div>
+			<div class="columns large-7 small-12 ">
+				<ul class="inline-list foot-right">
+		          	
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/about" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/about" property="dc:title">About</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/faq" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/faq" property="dc:title">FAQ</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/search" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/search" property="dc:title">Search</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/Add_AT_Component" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component" property="dc:title">Add Component</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/search_advanced" class="">
+							<a href="http://deinhofer.github.io/zurb-foundation.docpad//pages/search_advanced" property="dc:title"></a>
+						</li>
+					
+		        </ul>
+			</div>
+		</div>
+	</footer>
+	<!-- Scripts -->
+
+	<!-- Depending on browser support load the zepto-pack or the jquery-pack. 
+		As configured (see grunt-config.json) this includes: 
+		 - modernizr, 
+		 - zepto OR jquery
+		 - foundation.topbar.js
+
+		condition jquery or zepto adapted from: 
+		http://foundation.zurb.com/docs/javascript.html
+	-->
+	<script>
+	  document.write('<script src=/scripts/'
+	    + ('__proto__' in {} ? 'zepto' : 'jquery')
+	    + '-pack.min.js><\/script>');
+	</script>
+	<script>
+		//init all foundation plugins. 
+		//Currently this only includes foundation.topbar.js
+		//See http://foundation.zurb.com/docs/javascript.html
+		$(document).foundation();
+	</script>
+	<script defer="defer"  src="http://deinhofer.github.io/zurb-foundation.docpad//scripts/app.js"></script><script defer="defer"  src="http://deinhofer.github.io/zurb-foundation.docpad//scripts/script.js"></script>
+</body>
+</html>

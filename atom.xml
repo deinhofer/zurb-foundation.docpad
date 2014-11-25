@@ -1,0 +1,1841 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>D-Space - Assistive Technology Component Repository</title>
+	<link href="http://deinhofer.github.io/zurb-foundation.docpad//atom.xml" rel="self"/>
+	<link href="http://deinhofer.github.io/zurb-foundation.docpad/"/>
+	<updated>2014-11-25T15:19:28.151Z</updated>
+	<id>http://deinhofer.github.io/zurb-foundation.docpad/</id>
+	<author>
+		<name>Martin Deinhofer</name>
+		<email>your@email.com</email>
+	</author>
+
+	
+		<entry>
+			<title>URC Super Sockets</title>
+			<link href="http://deinhofer.github.io/zurb-foundation.docpad///posts/URC_Super_Sockets"/>
+			<updated>2014-07-23T13:50:02.000Z</updated>
+			<id>http://deinhofer.github.io/zurb-foundation.docpad///posts/URC_Super_Sockets</id>
+			<content type="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+	&lt;!-- Meta --&gt;
+	&lt;meta charset=&quot;utf-8&quot; /&gt;
+	&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+
+	&lt;!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/i/378 --&gt;
+	&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;
+
+	&lt;!-- Our site title and description --&gt;
+	&lt;title&gt;URC Super Sockets | D-Space - Assistive Technology Component Repository&lt;/title&gt;
+	&lt;meta name=&quot;description&quot; content=&quot;When your website appears in search results in say Google, the text here will be shown underneath your website's title.&quot; /&gt;
+	&lt;meta name=&quot;keywords&quot; content=&quot;place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website&quot; /&gt;
+	&lt;meta name=&quot;author&quot; content=&quot;Martin Deinhofer&quot; /&gt;
+
+	&lt;!-- Output DocPad produced meta elements --&gt;
+	&lt;meta name=&quot;generator&quot; content=&quot;DocPad v6.57.3&quot; /&gt;
+
+	&lt;!-- Mobile viewport optimized: h5bp.com/viewport --&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;
+
+	&lt;!-- Icons --&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;icons/favicon.ico&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;icons/apple-touch-icon-144-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;icons/apple-touch-icon-114-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;icons/apple-touch-icon-72-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;icons/apple-touch-icon-57-precomposed.png&quot;&gt;
+
+	&lt;!-- Shims: IE6-8 support of HTML5 elements --&gt;
+	&lt;!--[if lt IE 9]&gt;
+		&lt;script async src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+	
+	&lt;!-- Styles --&gt;
+	&lt;link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro' rel='stylesheet' type='text/css'&gt;
+	&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//styles/zurb-foundation.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//styles/style.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//styles/highlightjs-github.css&quot; /&gt;
+
+&lt;/head&gt;
+&lt;body &gt;
+	&lt;div id='layout'&gt;
+	    &lt;nav class=&quot;container top-bar&quot; style=&quot;&quot;&gt;
+	        &lt;ul class=&quot; title-area&quot;&gt;
+	          &lt;li class=&quot;name&quot;&gt;
+	            &lt;h1&gt;&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//&quot;&gt; D-Space - Assistive Technology Component Repository&lt;/a&gt;&lt;/h1&gt;
+	          &lt;/li&gt;
+	          &lt;li class=&quot;toggle-topbar menu-icon&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;Menu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	        &lt;/ul&gt;  
+	        &lt;section class=&quot;top-bar-section&quot;&gt;
+	          &lt;ul class=&quot;right&quot;&gt;
+	          	
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/about&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/about&quot; property=&quot;dc:title&quot;&gt;About&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/search&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/search&quot; property=&quot;dc:title&quot;&gt;Search&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/Add_AT_Component&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component&quot; property=&quot;dc:title&quot;&gt;Add Component&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          &lt;/ul&gt;
+	        &lt;/section&gt;
+	    &lt;/nav&gt;
+		&lt;div role=&quot;main&quot;&gt;
+			&lt;article id=&quot;post&quot; class=&quot;post&quot;&gt;
+
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;columns post-content&quot;&gt;
+			&lt;h1&gt;URC Super Sockets&lt;/h1&gt;
+			&lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;#General_Background&quot;&gt;General Background&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#User_interface_socket&quot;&gt;User interface socket&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Super_Sockets&quot;&gt;Super Sockets&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Potential_Applications&quot;&gt;Potential Applications&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Technologies&quot;&gt;Technologies&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#Universal_Control_Hub_.28UCH.29&quot;&gt;Universal Control Hub (UCH)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;#Licence_Information&quot;&gt;Licence Information&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Status.2C_Known_Issues_.26_Planned_Work&quot;&gt;Status, Known Issues &amp;amp; Planned Work&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Further_Resources&quot;&gt;Further Resources&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Wiki_Categories&quot;&gt;Wiki Categories&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;urc-super-sockets&quot;&gt;URC Super Sockets&lt;/h2&gt;
+&lt;p&gt;Keywords: Universal Remote Console, Abstract User Interface, Plugable User Interface, Smart Home, Ambient Assisted Living, Contact: &lt;a href=&quot;mailto:smirek@hdm-stuttgart.de&quot; title=&quot;mailto:smirek@hdm-stuttgart.de&quot;&gt;mailto:smirek@hdm-stuttgart.de&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;general-background&quot;&gt;General Background&lt;/h3&gt;
+&lt;p&gt;The goal of the Universal Remote Console technology is that every device or service can be accessed and controlled by any control device and user interface that fits the user&amp;#39;s needs and preferences, using suitable input and output modalities and interaction mechanisms. This also enables AT vendors and AT experts) to provide supplemental (&amp;quot;pluggable&amp;quot;) user interfaces for mainstream products and services, allowing for AT components to be integrated in pluggable user interfaces.&lt;/p&gt;
+&lt;p&gt;In the following, we refer to the devices and services that are to be controlled as &amp;quot;targets&amp;quot;, and to the control devices and their user interfaces as &amp;quot;universal remote consoles&amp;quot; (URCs).&lt;/p&gt;
+&lt;h3 id=&quot;user-interface-socket&quot;&gt;User interface socket&lt;/h3&gt;
+&lt;p&gt;Each target provides a user interface socket (or short socket), or set of sockets, through which a URC can access part or all of the target&amp;#39;s internal states and provide control inputs to the target. For each socket, a target provides a xml file called user interface socket description (or short socket description) which describes the socket in a machine interpretable manner. Additionally the target provides resources that pertain to the user interface of the target, as viewed through that socket. The socket description and resources are used by the URC to find or generate an appropriate user interface, given the functionality of the target, the nature of the URC device, and the user&amp;#39;s interaction preferences.&lt;/p&gt;
+&lt;h3 id=&quot;super-sockets&quot;&gt;Super Sockets&lt;/h3&gt;
+&lt;p&gt;Super sockets relate to a certain class of devices and will be provided under the Creative Commons by Attribution License. This gives 3rd parties the possibility to extend the functionality of an existing super socket either by adopting the socket itself or by using the mechanism of inheritance. Hence individual sockets must no more build from scratch.&lt;/p&gt;
+&lt;h3 id=&quot;potential-applications&quot;&gt;Potential Applications&lt;/h3&gt;
+&lt;p&gt;The URC framework and the provided Super Sockets can be used by third parties and adopted to their own products. Super-Sockets will serve as basis for the development of personalized user interfaces to mainstream products in smart homes. They also can be used in the field of Ambient assisted Living.&lt;/p&gt;
+&lt;h3 id=&quot;technologies&quot;&gt;Technologies&lt;/h3&gt;
+&lt;h4 id=&quot;universal-control-hub-uch-&quot;&gt;Universal Control Hub (UCH)&lt;/h4&gt;
+&lt;p&gt;The Universal Control Hub (UCH) is a profiling of the Universal Remote Console framework, as specified in ISO/IEC 24752. In this profile, a gateway (&amp;quot;control hub&amp;quot;) is used as a middle layer between a controller and a target device or service. The gateway translates between any controller and any target; neither the controller nor the target needs to be URC compatible.&lt;/p&gt;
+&lt;h3 id=&quot;licence-information&quot;&gt;Licence Information&lt;/h3&gt;
+&lt;p&gt;The URC Super Sockets will be provided under the Creative Commons by Attribution License so that they can be used by third parties and adopted to their own products.&lt;/p&gt;
+&lt;h3 id=&quot;status-known-issues-planned-work&quot;&gt;Status, Known Issues &amp;amp; Planned Work&lt;/h3&gt;
+&lt;p&gt;Our stake of Task 202.4 is to provide Template URC Socket Modules (&amp;quot;super-sockets&amp;quot; by inheritance) for various targets (products and services). Super-Sockets will serve as basis for the development of personalized user interfaces to mainstream products in smart homes. Furthermore we will provide &lt;a href=&quot;/URC_Super_Sockets_tutorials&quot; title=&quot;URC_Super_Sockets_tutorials&quot;&gt;URC Tutorials&lt;/a&gt; on how to connect AT input components to a URC socket at runtime.&lt;/p&gt;
+&lt;h3 id=&quot;further-resources&quot;&gt;Further Resources&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.openurc.org/&quot; title=&quot;http://www.openurc.org/&quot;&gt;openURC Alliance&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.openurc.org/TR/urc-overview2.0-20130218/&quot; title=&quot;http://www.openurc.org/TR/urc-overview2.0-20130218/&quot;&gt;Overview of the Universal Remote Console framework&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.openurc.org/TR/urc-tech-primer1.0-20121022/&quot; title=&quot;http://www.openurc.org/TR/urc-tech-primer1.0-20121022/&quot;&gt;URC Technical Primer 1.0 (DRAFT)&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.openurc.org/TR/urc-http-protocol2.0-20131217/&quot; title=&quot;http://www.openurc.org/TR/urc-http-protocol2.0-20131217/&quot;&gt;URC-HTTP Protocol 2.0&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://myurc.org/tools/&quot; title=&quot;http://myurc.org/tools/&quot;&gt;Tools and Prototype Implementations for the URC framework&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.openurc.org/TR/uch1.0-20131217/&quot; title=&quot;http://www.openurc.org/TR/uch1.0-20131217/&quot;&gt;Universal Control Hub 1.0 (ATR)&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;wiki-categories&quot;&gt;Wiki Categories&lt;/h2&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/article&gt;
+
+
+&lt;div class=&quot;row&quot;&gt;
+
+
+	
+&lt;/div&gt;
+		&lt;/div&gt;
+	    &lt;div id='layout_footer'&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;footer id='footer' class=&quot;panel&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;columns large-5 small-12&quot;&gt;
+			&amp;copy; GPII Inc. 2014
+			&lt;/div&gt;
+			&lt;div class=&quot;columns large-7 small-12 &quot;&gt;
+				&lt;ul class=&quot;inline-list foot-right&quot;&gt;
+		          	
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/about&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/about&quot; property=&quot;dc:title&quot;&gt;About&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/faq&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/faq&quot; property=&quot;dc:title&quot;&gt;FAQ&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/search&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/search&quot; property=&quot;dc:title&quot;&gt;Search&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/Add_AT_Component&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component&quot; property=&quot;dc:title&quot;&gt;Add Component&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/search_advanced&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/search_advanced&quot; property=&quot;dc:title&quot;&gt;&lt;/a&gt;
+						&lt;/li&gt;
+					
+		        &lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/footer&gt;
+	&lt;!-- Scripts --&gt;
+
+	&lt;!-- Depending on browser support load the zepto-pack or the jquery-pack. 
+		As configured (see grunt-config.json) this includes: 
+		 - modernizr, 
+		 - zepto OR jquery
+		 - foundation.topbar.js
+
+		condition jquery or zepto adapted from: 
+		http://foundation.zurb.com/docs/javascript.html
+	--&gt;
+	&lt;script&gt;
+	  document.write('&lt;script src=/scripts/'
+	    + ('__proto__' in {} ? 'zepto' : 'jquery')
+	    + '-pack.min.js&gt;&lt;\/script&gt;');
+	&lt;/script&gt;
+	&lt;script&gt;
+		//init all foundation plugins. 
+		//Currently this only includes foundation.topbar.js
+		//See http://foundation.zurb.com/docs/javascript.html
+		$(document).foundation();
+	&lt;/script&gt;
+	&lt;script defer=&quot;defer&quot;  src=&quot;http://deinhofer.github.io/zurb-foundation.docpad//scripts/app.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://deinhofer.github.io/zurb-foundation.docpad//scripts/script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>Smart Home Integration Modules</title>
+			<link href="http://deinhofer.github.io/zurb-foundation.docpad///posts/Smart_Home_Integration_Modules"/>
+			<updated>2014-07-23T13:48:09.000Z</updated>
+			<id>http://deinhofer.github.io/zurb-foundation.docpad///posts/Smart_Home_Integration_Modules</id>
+			<content type="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+	&lt;!-- Meta --&gt;
+	&lt;meta charset=&quot;utf-8&quot; /&gt;
+	&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+
+	&lt;!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/i/378 --&gt;
+	&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;
+
+	&lt;!-- Our site title and description --&gt;
+	&lt;title&gt;Smart Home Integration Modules | D-Space - Assistive Technology Component Repository&lt;/title&gt;
+	&lt;meta name=&quot;description&quot; content=&quot;When your website appears in search results in say Google, the text here will be shown underneath your website's title.&quot; /&gt;
+	&lt;meta name=&quot;keywords&quot; content=&quot;place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website&quot; /&gt;
+	&lt;meta name=&quot;author&quot; content=&quot;Martin Deinhofer&quot; /&gt;
+
+	&lt;!-- Output DocPad produced meta elements --&gt;
+	&lt;meta name=&quot;generator&quot; content=&quot;DocPad v6.57.3&quot; /&gt;
+
+	&lt;!-- Mobile viewport optimized: h5bp.com/viewport --&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;
+
+	&lt;!-- Icons --&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;icons/favicon.ico&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;icons/apple-touch-icon-144-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;icons/apple-touch-icon-114-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;icons/apple-touch-icon-72-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;icons/apple-touch-icon-57-precomposed.png&quot;&gt;
+
+	&lt;!-- Shims: IE6-8 support of HTML5 elements --&gt;
+	&lt;!--[if lt IE 9]&gt;
+		&lt;script async src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+	
+	&lt;!-- Styles --&gt;
+	&lt;link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro' rel='stylesheet' type='text/css'&gt;
+	&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//styles/zurb-foundation.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//styles/style.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//styles/highlightjs-github.css&quot; /&gt;
+
+&lt;/head&gt;
+&lt;body &gt;
+	&lt;div id='layout'&gt;
+	    &lt;nav class=&quot;container top-bar&quot; style=&quot;&quot;&gt;
+	        &lt;ul class=&quot; title-area&quot;&gt;
+	          &lt;li class=&quot;name&quot;&gt;
+	            &lt;h1&gt;&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//&quot;&gt; D-Space - Assistive Technology Component Repository&lt;/a&gt;&lt;/h1&gt;
+	          &lt;/li&gt;
+	          &lt;li class=&quot;toggle-topbar menu-icon&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;Menu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	        &lt;/ul&gt;  
+	        &lt;section class=&quot;top-bar-section&quot;&gt;
+	          &lt;ul class=&quot;right&quot;&gt;
+	          	
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/about&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/about&quot; property=&quot;dc:title&quot;&gt;About&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/search&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/search&quot; property=&quot;dc:title&quot;&gt;Search&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/Add_AT_Component&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component&quot; property=&quot;dc:title&quot;&gt;Add Component&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          &lt;/ul&gt;
+	        &lt;/section&gt;
+	    &lt;/nav&gt;
+		&lt;div role=&quot;main&quot;&gt;
+			&lt;article id=&quot;post&quot; class=&quot;post&quot;&gt;
+
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;columns post-content&quot;&gt;
+			&lt;h1&gt;Smart Home Integration Modules&lt;/h1&gt;
+			&lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;#Component_Description&quot;&gt;Component Description&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Potential_Applications&quot;&gt;Potential Applications&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Technologies&quot;&gt;Technologies&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Data_interface_for_KNX_component&quot;&gt;Data interface for KNX component&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#Input_Ports&quot;&gt;Input Ports&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Properties&quot;&gt;Properties&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Event_Listeners&quot;&gt;Event Listeners&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Events_Triggers&quot;&gt;Events Triggers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;#Data_interface_for_enOcean_component&quot;&gt;Data interface for enOcean component&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#Input_Ports_2&quot;&gt;Input Ports&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Properties_2&quot;&gt;Properties&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Event_Listeners_2&quot;&gt;Event Listeners&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Events_Triggers_2&quot;&gt;Events Triggers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;#Licence_Information&quot;&gt;Licence Information&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Further_Resources&quot;&gt;Further Resources&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;smart-home-integration-modules&quot;&gt;Smart Home Integration Modules&lt;/h2&gt;
+&lt;p&gt;Keywords: Assistive Technologies, Sensor, Actuator, Microcontroller, KNX, EnOcean, Environmental Control Systems, Contact: &lt;a href=&quot;/FHTW&quot; title=&quot;FHTW&quot;&gt;FHTW&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;component-description&quot;&gt;Component Description&lt;/h3&gt;
+&lt;p&gt;Several components provide access to standardized building automation and smart home control systems: The KNX component interfaces with a KNX-IP router which connects a &lt;a href=&quot;http://www.knx.org&quot; title=&quot;http://www.knx.org&quot;&gt;KNX&lt;/a&gt; network with various actuators and sensors. The KNX network is configured via the ETS software which makes it possible to assign group- and device addresses to the sensors and actuators, which can then be accessed from the AsTeRICS KNX plugin. The underlying software library for the KNX-specific functionalities is &lt;a href=&quot;http://sourceforge.net/p/calimero/wiki/Home/&quot; title=&quot;http://sourceforge.net/p/calimero/wiki/Home/&quot;&gt;Calimero&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.enocean.com/en/home/&quot; title=&quot;http://www.enocean.com/en/home/&quot;&gt;EnOcean&lt;/a&gt; is an engergy-harvesting wireless sensor network widely used in home- and building automation tasks. As KNX, enOcean provides many different sensors and actuators for smart home control and management. This component utilizes the Priscilla java library for the EnOcean implementation. The EnOcean plugin provides an interface to the EnOcean sensors over an USB stick (EnOcean USB300) or an IP gateway. Interfacing to EnOcean devices is possible either by sending different data to actuators or receiving different types of values. This allows control of lightning, heat and ventilation devices and many more via the AsTeRICS platform.&lt;/p&gt;
+&lt;h3 id=&quot;potential-applications&quot;&gt;Potential Applications&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Controlling lighting, heating/ventilation, blend motors, and many other building automation devices and facilities with alternative user interfaces / GUI&lt;/li&gt;
+&lt;li&gt;Using KNX / EnOcean sensors for assistive purposes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;technologies&quot;&gt;Technologies&lt;/h3&gt;
+&lt;p&gt;The components are realized as part of the building block &lt;a href=&quot;/AsTeRICS_AT_Modules&quot; title=&quot;AsTeRICS AT Modules&quot;&gt;AsTeRICS AT Modules&lt;/a&gt; which provide the AsTeRICS Runtime Environment (ARE) that forwards the data to a websocket interface or vice versa from a websocket interface to the KNX, and enOcean components.&lt;/p&gt;
+&lt;h4 id=&quot;data-interface-for-knx-component&quot;&gt;Data interface for KNX component&lt;/h4&gt;
+&lt;p&gt;The KNX plugin establishes a connection to the KNX gateway specified by the plugin properties. The plugin has three different possibilities to interface KNX datapoints. The easiest way is to use the slider input ports, which are intended to be used to control dimming actuators. These ports always expect integer values (ports are of the type double but these are typecasted) and forward the value to a groupaddress specified by the plugin properties. The second way to send data to a KNX data point is by the 6 event listeners. Each of them can be configured individually by the plugin properties. The most universal way to send KNX commands is to use the command input of the KNX plugin. It expects a special formatted string and parses the dedicated keywords and format to a KNX command. The string can be assembled individually with other string formatting plugins. The KNX plugin has also some Event Trigger which can be assigned to various KNX Group Addresses within the properties. The KNX plugin listens to the bus and each time a massage with a specified Trigger Group Address is recognized an Event Trigger is issued. This kind of event handling requires dedicated KNX infrastructure setup.&lt;/p&gt;
+&lt;h5 id=&quot;input-ports&quot;&gt;Input Ports&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;command [string]: This port receives string commands for the KNX component. The commands have to be in the format &amp;quot;@KNX: group_address#type#value&amp;quot;. An example for a valid command is&amp;quot;@KNX:1/1/1#boolean#true&amp;quot;. As a valid command is received by the input port, the value is sent to the KNX group address. The group addresses comply to the setup of the KNX network which can be configured with the ETS software.&lt;/li&gt;
+&lt;li&gt;slider[1-6] [double]: Input port for a double value which is converted to an integer and forwarded to a dedicated KNX datapoint&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;properties&quot;&gt;Properties&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;localIP [string]: The local IP address of the interface which can reach the KNXnetIP.&lt;/li&gt;
+&lt;li&gt;KNXNetIP [string]: The destination IP address of the KNX gateway.&lt;/li&gt;
+&lt;li&gt;NAT [boolean]: Enable Network Address Translation&lt;/li&gt;
+&lt;li&gt;groupAddress[1-6] [string]: (Event Listener) Specifies KNX group addresses for the [n] Event Listener e.g. &amp;quot;1/1/1&amp;quot;.&lt;/li&gt;
+&lt;li&gt;dataType[1-6] [string]: (Event Listener) Specifies the data type of the dataValue[1-6] which is send to the KNX datapoint. The data type for values to be sent to the KNX group addresses. Following type are supported: boolean, int, float, string&lt;/li&gt;
+&lt;li&gt;dataValue[1-6] [string]: (Event Listener) Specifies the data which will be converted to the coresponding data type.&lt;/li&gt;
+&lt;li&gt;groupAddressSlider[1-6] [string]: Specifies KNX group addresses for the Slider[n].&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;groupAddressTrigger[1-6] [string]: Specifies KNX group addresses for the Event Trigger [n].&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A0 - A5 [integer]: The readings of the 6 analog channels of the Arduino (0-1023)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;event-listeners&quot;&gt;Event Listeners&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;send[1-6]: Each time a event is triggered, the coresponding KNX command which is specified in the plugin properties, is issued.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;events-triggers&quot;&gt;Events Triggers&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;event_out_[1-6]: Each time a event is triggered, the coresponding KNX command which is specified in the plugin properties, is issued.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;data-interface-for-enocean-component&quot;&gt;Data interface for enOcean component&lt;/h4&gt;
+&lt;p&gt;The EnOcean plugin establishes a connection to the EnOcean gateway specified by the plugin properties (defined by gatewayIP and USB checkbox). The gatewayIP is either the IP adress of the gateway or the COM port name (e.g. COM1 or /dev/ttyUSB0). There are 3 different ways of sending data to EnOcean devices. The first one is done by the 6 input slider ports. Each of them has properties for the source device ID (range: 0-127) and a data type (binary, temperature, illumination, humidity, temperature set point and fan level). On every update of the input data, an EnOcean data frame is generated and sent. The second method is done over the event input ports. There are 3 properties to define. The device ID and the data type have equal possible values as with the slider input. The third property defines the value to be sent. The first method is the most flexible one, by sending a command string to the command input port. It expects a special formatted string and parses the dedicated keywords and format to an EnOcean command. The string can be assembled individually with other string formatting plugins. Receiving sensor data is done by combining event and output ports. There are 2 properties, one for the type of input data (the data type are the same as stated before) and one for the source device ID (this property is a hexadecimal string, containing the full 32bit ID, printed on the sensor). The event ports are triggered each time, an event with the defined type and device ID is received. If an event is raised, at the same time the corresponding data value is available at the output ports.&lt;/p&gt;
+&lt;h5 id=&quot;input-ports&quot;&gt;Input Ports&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;command [string]: This port receives string commands for the EnOcean devices. The commands have to be in the format &amp;quot;@ENOCEAN:device_id#type#value&amp;quot;. An example for a valid command is&amp;quot;@ENOCEAN:25#binary#true&amp;quot;. As a valid command is received by the input port, the value and data type is broadcasted to the devices with the given device ID offset (range: 0-127)&lt;/li&gt;
+&lt;li&gt;slider[1-6] [double]: Input port for a double value which is converted to an integer (or another type, depends on the datatype) and broadcasted to all EnOcean devices in range&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;properties&quot;&gt;Properties&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;localIP [string]: The local IP address of the interface which can reach the IP gateway.&lt;/li&gt;
+&lt;li&gt;gatewayIP [string]: The destination IP address of the EnOcean gateway or the device name of the USB gateway (emulates a serial interface, e.g. COM1 or /dev/ttyUSB0)&lt;/li&gt;
+&lt;li&gt;USB [boolean]: If checked, then the connection will be established through a serial interface, otherwise through an IP gateway&lt;/li&gt;
+&lt;li&gt;id[1-6] [integer]: Source ID for input event[n]. The range is from 0 to 127.&lt;/li&gt;
+&lt;li&gt;sendType[1-6] [string]: Send type for input event[n]. Following data types are allowed global (for every datatype property, port and event): binary, temperature, illumination, humidity, setpoint, fan&lt;/li&gt;
+&lt;li&gt;dataValue[1-6] [string]: The transmitted value for the input event [n] with the given id[n] and type (sendType[n])&lt;/li&gt;
+&lt;li&gt;IDSlider[1-6] [string]: Source ID for slider[n]. The range is from 0 to 127.&lt;/li&gt;
+&lt;li&gt;sendTypeSlider[1-6] [string]: The data type for sending slider[n] data with IDSLider[n]. The possible data types are stated above&lt;/li&gt;
+&lt;li&gt;IDTrigger[1-6] [string]: Source ID for event trigger[n]. This is a full id, as printed on the device as 6 character string(e.g. FFEFA01C)&lt;/li&gt;
+&lt;li&gt;TypeTrigger[1-6] [string]: The data type for the listening event[n]. If an incoming frame from the give ID (IDTrigger[n]) contains this data type, an event on event port [n] is raised. The possible data types are stated above&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;event-listeners&quot;&gt;Event Listeners&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;send[1-6]: Each time a event is triggered, the coresponding EnOcean frame which is specified in the plugin properties, is transmitted.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;events-triggers&quot;&gt;Events Triggers&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;event_out_[1-6]: Each time a frame is received with the given parameters (from properties IDTrigger[n] and TypeTrigger[n]), this event is raised&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;licence-information&quot;&gt;Licence Information&lt;/h3&gt;
+&lt;p&gt;Originally, the AsTeRICS Runtime Environment (ARE) was licensed under GPLv3. &lt;a href=&quot;http://www.asterics.eu/download/Licenses.pdf&quot;&gt;[1]&lt;/a&gt; For usage within the P4ALL/GPII project, the ARE and dedicated building blocks can be relicensed under a less restrictive licence. For more information please contact &lt;a href=&quot;/FHTW&quot; title=&quot;FHTW&quot;&gt;FHTW&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The Priscilla Library used for the EnOcean component is (C)opyrighted by UAS FH Technikum Wien and released under the GNU Lesser General Public License (LGPL).&lt;/p&gt;
+&lt;h3 id=&quot;further-resources&quot;&gt;Further Resources&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.knx.org&quot; title=&quot;http://www.knx.org&quot;&gt;KNX&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.enocean.com/en/home/&quot; title=&quot;http://www.enocean.com/en/home/&quot;&gt;EnOcean&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.asterics.eu/index.php?id=88&quot; title=&quot;http://www.asterics.eu/index.php?id=88&quot;&gt;AsTeRICS homepage&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.asterics.eu/index.php?id=55&quot; title=&quot;http://www.asterics.eu/index.php?id=55&quot;&gt;Videos/Demos&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.asterics.eu/index.php?id=26&quot; title=&quot;http://www.asterics.eu/index.php?id=26&quot;&gt;Downloads and Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/asterics/AsTeRICS&quot; title=&quot;https://github.com/asterics/AsTeRICS&quot;&gt;Code Repository&lt;/a&gt;&lt;/p&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/article&gt;
+
+
+&lt;div class=&quot;row&quot;&gt;
+
+
+	
+&lt;/div&gt;
+		&lt;/div&gt;
+	    &lt;div id='layout_footer'&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;footer id='footer' class=&quot;panel&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;columns large-5 small-12&quot;&gt;
+			&amp;copy; GPII Inc. 2014
+			&lt;/div&gt;
+			&lt;div class=&quot;columns large-7 small-12 &quot;&gt;
+				&lt;ul class=&quot;inline-list foot-right&quot;&gt;
+		          	
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/about&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/about&quot; property=&quot;dc:title&quot;&gt;About&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/faq&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/faq&quot; property=&quot;dc:title&quot;&gt;FAQ&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/search&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/search&quot; property=&quot;dc:title&quot;&gt;Search&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/Add_AT_Component&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component&quot; property=&quot;dc:title&quot;&gt;Add Component&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/search_advanced&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/search_advanced&quot; property=&quot;dc:title&quot;&gt;&lt;/a&gt;
+						&lt;/li&gt;
+					
+		        &lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/footer&gt;
+	&lt;!-- Scripts --&gt;
+
+	&lt;!-- Depending on browser support load the zepto-pack or the jquery-pack. 
+		As configured (see grunt-config.json) this includes: 
+		 - modernizr, 
+		 - zepto OR jquery
+		 - foundation.topbar.js
+
+		condition jquery or zepto adapted from: 
+		http://foundation.zurb.com/docs/javascript.html
+	--&gt;
+	&lt;script&gt;
+	  document.write('&lt;script src=/scripts/'
+	    + ('__proto__' in {} ? 'zepto' : 'jquery')
+	    + '-pack.min.js&gt;&lt;\/script&gt;');
+	&lt;/script&gt;
+	&lt;script&gt;
+		//init all foundation plugins. 
+		//Currently this only includes foundation.topbar.js
+		//See http://foundation.zurb.com/docs/javascript.html
+		$(document).foundation();
+	&lt;/script&gt;
+	&lt;script defer=&quot;defer&quot;  src=&quot;http://deinhofer.github.io/zurb-foundation.docpad//scripts/app.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://deinhofer.github.io/zurb-foundation.docpad//scripts/script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>Point and Control</title>
+			<link href="http://deinhofer.github.io/zurb-foundation.docpad///posts/Point_and_Control"/>
+			<updated>2014-07-23T13:46:21.000Z</updated>
+			<id>http://deinhofer.github.io/zurb-foundation.docpad///posts/Point_and_Control</id>
+			<content type="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+	&lt;!-- Meta --&gt;
+	&lt;meta charset=&quot;utf-8&quot; /&gt;
+	&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+
+	&lt;!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/i/378 --&gt;
+	&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;
+
+	&lt;!-- Our site title and description --&gt;
+	&lt;title&gt;Point and Control | D-Space - Assistive Technology Component Repository&lt;/title&gt;
+	&lt;meta name=&quot;description&quot; content=&quot;When your website appears in search results in say Google, the text here will be shown underneath your website's title.&quot; /&gt;
+	&lt;meta name=&quot;keywords&quot; content=&quot;place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website&quot; /&gt;
+	&lt;meta name=&quot;author&quot; content=&quot;Martin Deinhofer&quot; /&gt;
+
+	&lt;!-- Output DocPad produced meta elements --&gt;
+	&lt;meta name=&quot;generator&quot; content=&quot;DocPad v6.57.3&quot; /&gt;
+
+	&lt;!-- Mobile viewport optimized: h5bp.com/viewport --&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;
+
+	&lt;!-- Icons --&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;icons/favicon.ico&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;icons/apple-touch-icon-144-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;icons/apple-touch-icon-114-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;icons/apple-touch-icon-72-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;icons/apple-touch-icon-57-precomposed.png&quot;&gt;
+
+	&lt;!-- Shims: IE6-8 support of HTML5 elements --&gt;
+	&lt;!--[if lt IE 9]&gt;
+		&lt;script async src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+	
+	&lt;!-- Styles --&gt;
+	&lt;link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro' rel='stylesheet' type='text/css'&gt;
+	&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//styles/zurb-foundation.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//styles/style.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//styles/highlightjs-github.css&quot; /&gt;
+
+&lt;/head&gt;
+&lt;body &gt;
+	&lt;div id='layout'&gt;
+	    &lt;nav class=&quot;container top-bar&quot; style=&quot;&quot;&gt;
+	        &lt;ul class=&quot; title-area&quot;&gt;
+	          &lt;li class=&quot;name&quot;&gt;
+	            &lt;h1&gt;&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//&quot;&gt; D-Space - Assistive Technology Component Repository&lt;/a&gt;&lt;/h1&gt;
+	          &lt;/li&gt;
+	          &lt;li class=&quot;toggle-topbar menu-icon&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;Menu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	        &lt;/ul&gt;  
+	        &lt;section class=&quot;top-bar-section&quot;&gt;
+	          &lt;ul class=&quot;right&quot;&gt;
+	          	
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/about&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/about&quot; property=&quot;dc:title&quot;&gt;About&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/search&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/search&quot; property=&quot;dc:title&quot;&gt;Search&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/Add_AT_Component&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component&quot; property=&quot;dc:title&quot;&gt;Add Component&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          &lt;/ul&gt;
+	        &lt;/section&gt;
+	    &lt;/nav&gt;
+		&lt;div role=&quot;main&quot;&gt;
+			&lt;article id=&quot;post&quot; class=&quot;post&quot;&gt;
+
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;columns post-content&quot;&gt;
+			&lt;h1&gt;Point and Control&lt;/h1&gt;
+			&lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;#Component_Description&quot;&gt;Component Description&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Potential_Applications&quot;&gt;Potential Applications&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Technologies&quot;&gt;Technologies&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Licence_Information&quot;&gt;Licence Information&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Status.2C_Known_Issues_.26_Planned_Work&quot;&gt;Status, Known Issues &amp;amp; Planned Work&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Further_Resources&quot;&gt;Further Resources&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#Videos.2FDemos&quot;&gt;Videos/Demos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Documentation.2FFAQs&quot;&gt;Documentation/FAQs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Related&quot;&gt;Related&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Getting_Involved&quot;&gt;Getting Involved&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;point-and-control&quot;&gt;Point and Control&lt;/h2&gt;
+&lt;p&gt;Keywords: remote control, smart home, Kinect, user location&lt;/p&gt;
+&lt;p&gt;Contact: &lt;a href=&quot;mailto:berning@teco.edu&quot; title=&quot;mailto:berning@teco.edu&quot;&gt;mailto:berning@teco.edu&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;component-description&quot;&gt;Component Description&lt;/h3&gt;
+&lt;p&gt;This system makes use of the Microsoft Kinect depth camera to enable Point&amp;amp;Click interaction for the control of appliances in smart environments. A backend server determines through collision detection which device the user is pointing at and sends the respective control interface to the user&amp;#39;s smartphone. Any commands the user issues are then sent back to the server which in turn controls the appliance. New devices can either be registered manually or using markers such as QR codes to identify them and get their position at the same time.&lt;/p&gt;
+&lt;h3 id=&quot;potential-applications&quot;&gt;Potential Applications&lt;/h3&gt;
+&lt;p&gt;Could be used in the scope of &lt;a href=&quot;/URC&quot; title=&quot;URC&quot;&gt;URC&lt;/a&gt; all supported systems, i.e. smart home scenarios (generally increases &lt;a href=&quot;/UX&quot; title=&quot;UX&quot;&gt;UX&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;It removes the need for browsing lists of devices in favour of spatial selection gestures, thus requires motor abilities and spatial cognition to do so.&lt;/p&gt;
+&lt;p&gt;Particularly we expect a lower digital literacy need for using the system and also expect (in combination e.g. also with speech output) applications benefits for users with visual impairment or users who do not prefer small screens on mobile devices in general.&lt;/p&gt;
+&lt;h3 id=&quot;technologies&quot;&gt;Technologies&lt;/h3&gt;
+&lt;p&gt;The platform support is currently limited by the dependency on the Kinect sensor. The current implementation is based on the official Kinect for Windows SDK by Microsoft, which is only available for Windows 7 and above. The complete SDK is not needed for execution, but the redistributable files and drivers are currently not included in the repository. The code is written in C# tested with .Net 4.0 and above. The configuration and location of the devices in a 3D room layout is stored in a XML file which is read out during the initialization. Changes in the program are written back to the file. HTTP is used for communication between client and server and the remote control user interfaces are designed using HTML.&lt;/p&gt;
+&lt;p&gt;A client on the smartphone of the user is required to interact with the system. The current implementation uses a native Android application with an integrated WebView (a simple HTML renderer) to display the remote control user interface. The application manages the connection to the server and provides the UI for registration and device selection.&lt;/p&gt;
+&lt;h3 id=&quot;licence-information&quot;&gt;Licence Information&lt;/h3&gt;
+&lt;p&gt;The code of the system is released under MIT License as stated in the repository.&lt;/p&gt;
+&lt;h3 id=&quot;status-known-issues-planned-work&quot;&gt;Status, Known Issues &amp;amp; Planned Work&lt;/h3&gt;
+&lt;p&gt;The system works reliably with the first version of the Kinect sensor. Currently the device repository, device selection and control is integrated in a single component.&lt;/p&gt;
+&lt;p&gt;Future Work:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Test performance of Kinect One sensor&lt;/li&gt;
+&lt;li&gt;Separate repository, selection and control into individual components, communicating via REST/JSON&lt;/li&gt;
+&lt;li&gt;Structured API with documentation&lt;/li&gt;
+&lt;li&gt;Migrate Android native app to web app&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;further-resources&quot;&gt;Further Resources&lt;/h3&gt;
+&lt;h4 id=&quot;videos-demos&quot;&gt;Videos/Demos&lt;/h4&gt;
+&lt;p&gt;A video demonstrating the system can be found here: &lt;a href=&quot;http://www.youtube.com/watch?v=RqlCYBIUMos&quot; title=&quot;http://www.youtube.com/watch?v=RqlCYBIUMos&quot;&gt;http://www.youtube.com/watch?v=RqlCYBIUMos&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;documentation-faqs&quot;&gt;Documentation/FAQs&lt;/h4&gt;
+&lt;p&gt;A paper abstract with more information on the system can be found here: &lt;a href=&quot;http://www.teco.edu/~berning/papers/ubicomp2013_video.pdf&quot; title=&quot;http://www.teco.edu/~berning/papers/ubicomp2013_video.pdf&quot;&gt;http://www.teco.edu/~berning/papers/ubicomp2013_video.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;related&quot;&gt;Related&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.microsoft.com/en-us/kinectforwindows/&quot; title=&quot;http://www.microsoft.com/en-us/kinectforwindows/&quot;&gt;Kinect for Windows SDK and Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;getting-involved&quot;&gt;Getting Involved&lt;/h4&gt;
+&lt;p&gt;The code is hosted at github: &lt;a href=&quot;https://github.com/teco-kit/PointAndControl&quot; title=&quot;https://github.com/teco-kit/PointAndControl&quot;&gt;https://github.com/teco-kit/PointAndControl&lt;/a&gt; This is a public repository, so everybody can contribute. If you find any bugs, you can also open a new issue.&lt;/p&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/article&gt;
+
+
+&lt;div class=&quot;row&quot;&gt;
+
+
+	
+&lt;/div&gt;
+		&lt;/div&gt;
+	    &lt;div id='layout_footer'&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;footer id='footer' class=&quot;panel&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;columns large-5 small-12&quot;&gt;
+			&amp;copy; GPII Inc. 2014
+			&lt;/div&gt;
+			&lt;div class=&quot;columns large-7 small-12 &quot;&gt;
+				&lt;ul class=&quot;inline-list foot-right&quot;&gt;
+		          	
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/about&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/about&quot; property=&quot;dc:title&quot;&gt;About&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/faq&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/faq&quot; property=&quot;dc:title&quot;&gt;FAQ&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/search&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/search&quot; property=&quot;dc:title&quot;&gt;Search&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/Add_AT_Component&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component&quot; property=&quot;dc:title&quot;&gt;Add Component&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/search_advanced&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/search_advanced&quot; property=&quot;dc:title&quot;&gt;&lt;/a&gt;
+						&lt;/li&gt;
+					
+		        &lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/footer&gt;
+	&lt;!-- Scripts --&gt;
+
+	&lt;!-- Depending on browser support load the zepto-pack or the jquery-pack. 
+		As configured (see grunt-config.json) this includes: 
+		 - modernizr, 
+		 - zepto OR jquery
+		 - foundation.topbar.js
+
+		condition jquery or zepto adapted from: 
+		http://foundation.zurb.com/docs/javascript.html
+	--&gt;
+	&lt;script&gt;
+	  document.write('&lt;script src=/scripts/'
+	    + ('__proto__' in {} ? 'zepto' : 'jquery')
+	    + '-pack.min.js&gt;&lt;\/script&gt;');
+	&lt;/script&gt;
+	&lt;script&gt;
+		//init all foundation plugins. 
+		//Currently this only includes foundation.topbar.js
+		//See http://foundation.zurb.com/docs/javascript.html
+		$(document).foundation();
+	&lt;/script&gt;
+	&lt;script defer=&quot;defer&quot;  src=&quot;http://deinhofer.github.io/zurb-foundation.docpad//scripts/app.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://deinhofer.github.io/zurb-foundation.docpad//scripts/script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>Bioelectric Signal Acquisition and Processing Modules</title>
+			<link href="http://deinhofer.github.io/zurb-foundation.docpad///posts/Bioelectric_Signal_Acquisition_and_Processing_Modules"/>
+			<updated>2014-07-23T13:43:15.000Z</updated>
+			<id>http://deinhofer.github.io/zurb-foundation.docpad///posts/Bioelectric_Signal_Acquisition_and_Processing_Modules</id>
+			<content type="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+	&lt;!-- Meta --&gt;
+	&lt;meta charset=&quot;utf-8&quot; /&gt;
+	&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+
+	&lt;!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/i/378 --&gt;
+	&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;
+
+	&lt;!-- Our site title and description --&gt;
+	&lt;title&gt;Bioelectric Signal Acquisition and Processing Modules | D-Space - Assistive Technology Component Repository&lt;/title&gt;
+	&lt;meta name=&quot;description&quot; content=&quot;When your website appears in search results in say Google, the text here will be shown underneath your website's title.&quot; /&gt;
+	&lt;meta name=&quot;keywords&quot; content=&quot;place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website&quot; /&gt;
+	&lt;meta name=&quot;author&quot; content=&quot;Martin Deinhofer&quot; /&gt;
+
+	&lt;!-- Output DocPad produced meta elements --&gt;
+	&lt;meta name=&quot;generator&quot; content=&quot;DocPad v6.57.3&quot; /&gt;
+
+	&lt;!-- Mobile viewport optimized: h5bp.com/viewport --&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;
+
+	&lt;!-- Icons --&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;icons/favicon.ico&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;icons/apple-touch-icon-144-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;icons/apple-touch-icon-114-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;icons/apple-touch-icon-72-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;icons/apple-touch-icon-57-precomposed.png&quot;&gt;
+
+	&lt;!-- Shims: IE6-8 support of HTML5 elements --&gt;
+	&lt;!--[if lt IE 9]&gt;
+		&lt;script async src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+	
+	&lt;!-- Styles --&gt;
+	&lt;link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro' rel='stylesheet' type='text/css'&gt;
+	&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//styles/zurb-foundation.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//styles/style.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//styles/highlightjs-github.css&quot; /&gt;
+
+&lt;/head&gt;
+&lt;body &gt;
+	&lt;div id='layout'&gt;
+	    &lt;nav class=&quot;container top-bar&quot; style=&quot;&quot;&gt;
+	        &lt;ul class=&quot; title-area&quot;&gt;
+	          &lt;li class=&quot;name&quot;&gt;
+	            &lt;h1&gt;&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//&quot;&gt; D-Space - Assistive Technology Component Repository&lt;/a&gt;&lt;/h1&gt;
+	          &lt;/li&gt;
+	          &lt;li class=&quot;toggle-topbar menu-icon&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;Menu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	        &lt;/ul&gt;  
+	        &lt;section class=&quot;top-bar-section&quot;&gt;
+	          &lt;ul class=&quot;right&quot;&gt;
+	          	
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/about&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/about&quot; property=&quot;dc:title&quot;&gt;About&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/search&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/search&quot; property=&quot;dc:title&quot;&gt;Search&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/Add_AT_Component&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component&quot; property=&quot;dc:title&quot;&gt;Add Component&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          &lt;/ul&gt;
+	        &lt;/section&gt;
+	    &lt;/nav&gt;
+		&lt;div role=&quot;main&quot;&gt;
+			&lt;article id=&quot;post&quot; class=&quot;post&quot;&gt;
+
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;columns post-content&quot;&gt;
+			&lt;h1&gt;Bioelectric Signal Acquisition and Processing Modules&lt;/h1&gt;
+			&lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;#Component_Descriptions&quot;&gt;Component Descriptions&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Potential_Applications&quot;&gt;Potential Applications&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Technologies&quot;&gt;Technologies&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Data_interface_for_the_OpenEEG_.22p2_parser.22_component&quot;&gt;Data interface for the OpenEEG &amp;quot;p2 parser&amp;quot; component&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#Output_Ports&quot;&gt;Output Ports&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Properties&quot;&gt;Properties&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;#Licence_Information&quot;&gt;Licence Information&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Further_Resources&quot;&gt;Further Resources&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;bioelectric-signal-acquisition-and-processing-modules&quot;&gt;Bioelectric Signal Acquisition and Processing Modules&lt;/h2&gt;
+&lt;p&gt;Keywords: Assistive Technologies, bioelectric signals, openEEG, EMG, EOG, Contact: &lt;a href=&quot;/FHTW&quot; title=&quot;FHTW&quot;&gt;FHTW&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;component-descriptions&quot;&gt;Component Descriptions&lt;/h3&gt;
+&lt;p&gt;Bioelectric signal acquisition can serve as a valuable input method for alternative computer interfaces for people with motor disabilities. Using bioelectic measurements liek the ElecroMyogram (EMG), the Electrooculogram (EOG) or the Electroencephalogram (EEG) allows mouse / keyboard control (and thereby full computer control) and even control of prosthesis or external appliances.&lt;/p&gt;
+&lt;p&gt;Several initiatives have provided means for the affordable acquisition of bioelectric signals, including the openEEG and the openBCI projects. The AsTeRICS components described in this section provide raw data from those devices, which can then be used in futher assistive applications pr in dedicated AsTeRICS models&lt;/p&gt;
+&lt;h3 id=&quot;potential-applications&quot;&gt;Potential Applications&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Measure EMG, EEG or EOG and use these signals for controlling alternative human-computer interfaces&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;technologies&quot;&gt;Technologies&lt;/h3&gt;
+&lt;p&gt;The currently supported devices are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the &lt;a href=&quot;http://openeeg.sourceforge.net/doc/modeeg/modeeg.html&quot; title=&quot;http://openeeg.sourceforge.net/doc/modeeg/modeeg.html&quot;&gt;Modular EEG&lt;/a&gt; 6-channel EEG amplifier&lt;/li&gt;
+&lt;li&gt;the &lt;a href=&quot;https://www.olimex.com/Products/EEG/OpenEEG/EEG-SMT/open-source-hardware&quot; title=&quot;https://www.olimex.com/Products/EEG/OpenEEG/EEG-SMT/open-source-hardware&quot;&gt;Olimex SMT EEG&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;the &lt;a href=&quot;http://www.openbci.com/&quot; title=&quot;http://www.openbci.com/&quot;&gt;OpenBCI&lt;/a&gt; 8-channel EEG/EMG/ECG amplifier&lt;/li&gt;
+&lt;li&gt;other particular devices can be integrated upon request&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These devices transfer data to the connected computer via a COM port via a protocol. In case of the ModularEEG, this data protocol is called &amp;quot;P2&amp;quot;, and the plugin which supports the connection and provides the raw multichannel bioelectric signals is called &amp;quot;P2 parser&amp;quot;. The COM Port number where the device is connected must be specified in the plugin properties.&lt;/p&gt;
+&lt;h4 id=&quot;data-interface-for-the-openeeg-p2-parser-component&quot;&gt;Data interface for the OpenEEG &amp;quot;p2 parser&amp;quot; component&lt;/h4&gt;
+&lt;p&gt;(for an explaination of the terms &amp;quot;port&amp;quot;, &amp;quot;event listener&amp;quot;, &amp;quot;event trigger&amp;quot; and &amp;quot;property&amp;quot; please refer to AsTeRICS AT Modules)&lt;/p&gt;
+&lt;h5 id=&quot;output-ports&quot;&gt;Output Ports&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Channel1 to Channel6 [integer]: Each output corresponds to the sampled data from its corresponding channel. The values range for -512 to 512. A calibration procedure to obtain the factor for calculation of microvolts must be performed with the amplifier device.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;properties&quot;&gt;Properties&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;COMPort [String]: The name of the COM port, for example COM2 or COM17.&lt;/li&gt;
+&lt;li&gt;Baudrate [Integer]: The baud rate for the transmission. Standard is 57600.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;licence-information&quot;&gt;Licence Information&lt;/h3&gt;
+&lt;p&gt;Originally, the AsTeRICS Runtime Environment (ARE) was licensed under GPLv3. [1] For usage within the P4ALL/GPII project, the ARE and dedicated building blocks can be relicensed under a less restrictive licence. For more information please contact &lt;a href=&quot;/FHTW&quot; title=&quot;FHTW&quot;&gt;FHTW&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;further-resources&quot;&gt;Further Resources&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.asterics.eu/index.php?id=88&quot; title=&quot;http://www.asterics.eu/index.php?id=88&quot;&gt;AsTeRICS homepage&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.asterics.eu/index.php?id=55&quot; title=&quot;http://www.asterics.eu/index.php?id=55&quot;&gt;Videos/Demos&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.asterics.eu/index.php?id=26&quot; title=&quot;http://www.asterics.eu/index.php?id=26&quot;&gt;Downloads and Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/asterics/AsTeRICS&quot; title=&quot;https://github.com/asterics/AsTeRICS&quot;&gt;Code Repository&lt;/a&gt;&lt;/p&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/article&gt;
+
+
+&lt;div class=&quot;row&quot;&gt;
+
+
+	
+&lt;/div&gt;
+		&lt;/div&gt;
+	    &lt;div id='layout_footer'&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;footer id='footer' class=&quot;panel&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;columns large-5 small-12&quot;&gt;
+			&amp;copy; GPII Inc. 2014
+			&lt;/div&gt;
+			&lt;div class=&quot;columns large-7 small-12 &quot;&gt;
+				&lt;ul class=&quot;inline-list foot-right&quot;&gt;
+		          	
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/about&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/about&quot; property=&quot;dc:title&quot;&gt;About&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/faq&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/faq&quot; property=&quot;dc:title&quot;&gt;FAQ&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/search&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/search&quot; property=&quot;dc:title&quot;&gt;Search&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/Add_AT_Component&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component&quot; property=&quot;dc:title&quot;&gt;Add Component&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/search_advanced&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/search_advanced&quot; property=&quot;dc:title&quot;&gt;&lt;/a&gt;
+						&lt;/li&gt;
+					
+		        &lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/footer&gt;
+	&lt;!-- Scripts --&gt;
+
+	&lt;!-- Depending on browser support load the zepto-pack or the jquery-pack. 
+		As configured (see grunt-config.json) this includes: 
+		 - modernizr, 
+		 - zepto OR jquery
+		 - foundation.topbar.js
+
+		condition jquery or zepto adapted from: 
+		http://foundation.zurb.com/docs/javascript.html
+	--&gt;
+	&lt;script&gt;
+	  document.write('&lt;script src=/scripts/'
+	    + ('__proto__' in {} ? 'zepto' : 'jquery')
+	    + '-pack.min.js&gt;&lt;\/script&gt;');
+	&lt;/script&gt;
+	&lt;script&gt;
+		//init all foundation plugins. 
+		//Currently this only includes foundation.topbar.js
+		//See http://foundation.zurb.com/docs/javascript.html
+		$(document).foundation();
+	&lt;/script&gt;
+	&lt;script defer=&quot;defer&quot;  src=&quot;http://deinhofer.github.io/zurb-foundation.docpad//scripts/app.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://deinhofer.github.io/zurb-foundation.docpad//scripts/script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>Camera Input Modules</title>
+			<link href="http://deinhofer.github.io/zurb-foundation.docpad///posts/Camera_Input_Modules"/>
+			<updated>2014-07-23T13:43:07.000Z</updated>
+			<id>http://deinhofer.github.io/zurb-foundation.docpad///posts/Camera_Input_Modules</id>
+			<content type="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+	&lt;!-- Meta --&gt;
+	&lt;meta charset=&quot;utf-8&quot; /&gt;
+	&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+
+	&lt;!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/i/378 --&gt;
+	&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;
+
+	&lt;!-- Our site title and description --&gt;
+	&lt;title&gt;Camera Input Modules | D-Space - Assistive Technology Component Repository&lt;/title&gt;
+	&lt;meta name=&quot;description&quot; content=&quot;When your website appears in search results in say Google, the text here will be shown underneath your website's title.&quot; /&gt;
+	&lt;meta name=&quot;keywords&quot; content=&quot;place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website&quot; /&gt;
+	&lt;meta name=&quot;author&quot; content=&quot;Martin Deinhofer&quot; /&gt;
+
+	&lt;!-- Output DocPad produced meta elements --&gt;
+	&lt;meta name=&quot;generator&quot; content=&quot;DocPad v6.57.3&quot; /&gt;
+
+	&lt;!-- Mobile viewport optimized: h5bp.com/viewport --&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;
+
+	&lt;!-- Icons --&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;icons/favicon.ico&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;icons/apple-touch-icon-144-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;icons/apple-touch-icon-114-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;icons/apple-touch-icon-72-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;icons/apple-touch-icon-57-precomposed.png&quot;&gt;
+
+	&lt;!-- Shims: IE6-8 support of HTML5 elements --&gt;
+	&lt;!--[if lt IE 9]&gt;
+		&lt;script async src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+	
+	&lt;!-- Styles --&gt;
+	&lt;link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro' rel='stylesheet' type='text/css'&gt;
+	&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//styles/zurb-foundation.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//styles/style.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//styles/highlightjs-github.css&quot; /&gt;
+
+&lt;/head&gt;
+&lt;body &gt;
+	&lt;div id='layout'&gt;
+	    &lt;nav class=&quot;container top-bar&quot; style=&quot;&quot;&gt;
+	        &lt;ul class=&quot; title-area&quot;&gt;
+	          &lt;li class=&quot;name&quot;&gt;
+	            &lt;h1&gt;&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//&quot;&gt; D-Space - Assistive Technology Component Repository&lt;/a&gt;&lt;/h1&gt;
+	          &lt;/li&gt;
+	          &lt;li class=&quot;toggle-topbar menu-icon&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;Menu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	        &lt;/ul&gt;  
+	        &lt;section class=&quot;top-bar-section&quot;&gt;
+	          &lt;ul class=&quot;right&quot;&gt;
+	          	
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/about&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/about&quot; property=&quot;dc:title&quot;&gt;About&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/search&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/search&quot; property=&quot;dc:title&quot;&gt;Search&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/Add_AT_Component&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component&quot; property=&quot;dc:title&quot;&gt;Add Component&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          &lt;/ul&gt;
+	        &lt;/section&gt;
+	    &lt;/nav&gt;
+		&lt;div role=&quot;main&quot;&gt;
+			&lt;article id=&quot;post&quot; class=&quot;post&quot;&gt;
+
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;columns post-content&quot;&gt;
+			&lt;h1&gt;Camera Input Modules&lt;/h1&gt;
+			&lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;#Component_Description&quot;&gt;Component Description&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Potential_Applications&quot;&gt;Potential Applications&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Technologies&quot;&gt;Technologies&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Operating_System&quot;&gt;Operating System&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Languages.2FLibraries&quot;&gt;Languages/Libraries&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Data_interface_for_the_FacetrackerLK_Module&quot;&gt;Data interface for the FacetrackerLK Module&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#Output_Ports&quot;&gt;Output Ports&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Event_Listeners&quot;&gt;Event Listeners&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Properties&quot;&gt;Properties&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;#Data_interface_for_the_Eyetracker_Module&quot;&gt;Data interface for the Eyetracker Module&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#Input_Ports&quot;&gt;Input Ports&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Output_Ports_2&quot;&gt;Output Ports&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Event_Listener_Ports&quot;&gt;Event Listener Ports&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Event_Listener_Ports_2&quot;&gt;Event Listener Ports&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Properties_2&quot;&gt;Properties&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;#Licence_Information&quot;&gt;Licence Information&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Further_Resources&quot;&gt;Further Resources&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;camera-input-modules&quot;&gt;Camera Input Modules&lt;/h2&gt;
+&lt;p&gt;Keywords: Assistive Technologies, Camera Input, Webcam, Facetracking, Mouse Emulation ,Contact: &lt;a href=&quot;/FHTW&quot; title=&quot;FHTW&quot;&gt;FHTW&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;component-description&quot;&gt;Component Description&lt;/h3&gt;
+&lt;p&gt;The camera input modules /(FacetrackerLK and EyeTracker) use a standard webcam or external camera and provide extracted computer vision features like the estimated positions of a users face / nose / chin or the eye pupil position in a live camera image.&lt;/p&gt;
+&lt;h3 id=&quot;potential-applications&quot;&gt;Potential Applications&lt;/h3&gt;
+&lt;p&gt;Use head movements, facial features or eye gaze&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;to control mouse cursor&lt;/li&gt;
+&lt;li&gt;to perform selections in an on-screen keyboard or menu&lt;/li&gt;
+&lt;li&gt;for accessible gaming&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;technologies&quot;&gt;Technologies&lt;/h3&gt;
+&lt;p&gt;The underlying mechanism build upon the &lt;a href=&quot;http://opencv.org/&quot; title=&quot;http://opencv.org/&quot;&gt;OpenCV library&lt;/a&gt; (in particular the cascade of haar-like features, the optical flow algorithm and template mathching).&lt;/p&gt;
+&lt;p&gt;The components are realized as part of the building block &lt;a href=&quot;/AsTeRICS_AT_Modules&quot; title=&quot;AsTeRICS AT Modules&quot;&gt;AsTeRICS AT Modules&lt;/a&gt; which provides the AsTeRICS Runtime Environment (ARE) that forwards the data to a websocket interface or vice versa from a websocket interface to the component. Data is provided as continous data stream. The camera can be controlled through plugin properties and events.&lt;/p&gt;
+&lt;h4 id=&quot;operating-system&quot;&gt;Operating System&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows XP, Vista, 7, 8&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;languages-libraries&quot;&gt;Languages/Libraries&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://opencv.org/&quot; title=&quot;http://opencv.org/&quot;&gt;OpenCV library&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;data-interface-for-the-facetrackerlk-module&quot;&gt;Data interface for the FacetrackerLK Module&lt;/h4&gt;
+&lt;p&gt;(for an explaination of the terms &amp;quot;port&amp;quot;, &amp;quot;event listener&amp;quot;, &amp;quot;event trigger&amp;quot; and &amp;quot;property&amp;quot; please refer to &lt;a href=&quot;/AsTeRICS_AT_Modules&quot; title=&quot;AsTeRICS AT Modules&quot;&gt;AsTeRICS AT Modules&lt;/a&gt;)&lt;/p&gt;
+&lt;h5 id=&quot;output-ports&quot;&gt;Output Ports&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;noseX [integer]: This value specifies the relative change in the x coordinate of the user&amp;#39;s nose with respect to the previous image frame.&lt;/li&gt;
+&lt;li&gt;noseY [integer]: This value specifies the relative change in the y coordinate of the user&amp;#39;s nose with respect to the previous image frame.&lt;/li&gt;
+&lt;li&gt;chinX [integer]: This value specifies the relative change in the x coordinate of the user&amp;#39;s chin with respect to the previous image frame.&lt;/li&gt;
+&lt;li&gt;chinY [integer]: This value specifies the relative change in the y coordinate of the user&amp;#39;s chin with respect to the previous image frame.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;event-listeners&quot;&gt;Event Listeners&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;init: if this action is triggered, the face recognition procedure is initiated. This can be useful if the correct face position has been lost due to drifting of the LK algorithm.&lt;/li&gt;
+&lt;li&gt;showCameraSettings: Triggers the opening of the settings window for the camera device, where parameters like image brightness or contrast can be adjusted.&lt;/li&gt;
+&lt;li&gt;saveProfile: The camera profile is saved.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;properties&quot;&gt;Properties&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;cameraSelection [string, combobox selection]: using this property, the utilized camera can be chosen. Possible values range from “first camera” to “fith camera”. If only one camera is available in the system, “first camera” shall be chosen.&lt;/li&gt;
+&lt;li&gt;cameraResolution [string, combobox selection]: This selection box provides several standard camera resolutions. Changing the resolution affects accuracy and performance (CPU load of the runtime system). Provided selections include “160x120”, “320x240”, “640x480”, “800x600”, “1024x768” and “1600x1200”. If the selectied resolution cannot be delivered by the image acquisition device, the next matching resolution is chosen by the plugin.&lt;/li&gt;
+&lt;li&gt;cameraDisplayUpdate [integer]: This property allows to select the update rate for the camera display in milliseconds. If “0” milliseconds is chosen, no window for the live-video will be displayed. If “100” is chosen, the live image window will be updated 10 times a second. Please note that this property does not influence the frame rate of the camera nor the processing interval for new camera frames, only the display in the GUI is adjusted.&lt;/li&gt;
+&lt;li&gt;cameraProfile [string]: Filename of the camera profile.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;data-interface-for-the-eyetracker-module&quot;&gt;Data interface for the Eyetracker Module&lt;/h4&gt;
+&lt;p&gt;(for an explaination of the terms &amp;quot;port&amp;quot;, &amp;quot;event listener&amp;quot;, &amp;quot;event trigger&amp;quot; and &amp;quot;property&amp;quot; please refer to &lt;a href=&quot;/AsTeRICS_AT_Modules&quot; title=&quot;AsTeRICS AT Modules&quot;&gt;AsTeRICS AT Modules&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;This plugin provides several modes of operation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;only blob tracking In this mode, the plugin just outputs the x/y coordinates of a round surface detected in the live camera images. No calibration procedure is needed. The plugins starts immediately with the coordinate output at the ports &amp;quot;x&amp;quot; and &amp;quot;y&amp;quot;. A possible application for this mode is tracking of a round marker which could be placed anywhere on the body.&lt;/li&gt;
+&lt;li&gt;calibrated eye tracking In this mode, the plugin expects close-up images of an eye, recorded by a head-mounted setup. The suggested hardware configuration is the AsTeRICS headmounted SVM system (see image below). The eye-pupil location is determined and mapped to an estimated position at the computer screen where the person is looking at. For this mode, the plugins needs to be calibrated. First, a rectangular region of interest (ROI) has to be selected by clicking into the live camera image while holding the CTRL/STRG key. The ROI should cover the area where the eyeball is moving when the user is looking in different directions. Then, the calibration sequence can be started by sending an event to the &amp;quot;calibrate&amp;quot; event listener port. During calibration, the cursor is moved to several locations on the screen and the user is supposed to look at these positions without moving the head. The changing of the cursor position is indicated with an acoustic signal. Calibration succeeds if all calibration location can be recorded without excessively distorted values. If the calibration cannot be accomplished successfully, an acoustic signal is emitted and the Eyetracker plugin does not start to put out x/y data. In this case the calibration procedure has to be repeated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The coordinate-output of the eye tracking is only working correctly if no head movements occur. Any head movement will compromise the correctness of the x/y estimation for the cursor position.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;calibrated eye tracking with head pose estimation. This mode is an extension of the &amp;quot;calibrated eye tracking&amp;quot; mode. The calibration has to be performed as above. Additionally to the head-mounted camera, an external LED-frame mounted on the computer monitor is used to minimize the negative effects of head movements to the tracking accuracy. Please note that this mode needs the head-mounted SVM device plus the external Led-Frame.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;input-ports&quot;&gt;Input Ports&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;pt1x - pt4x [integer]:&lt;/li&gt;
+&lt;li&gt;pt1y - pt4y [integer]: These 8 input ports can be connected to the corresponding output ports of the Sensorboard plugin. The Sensorboard delivers the location of 4 IR-led tracking points in the field-of-view of the IR-object-tracking camera of the headmounted SVM. This information can be used to compensate the head movement to increase gaze estimation stability. The 8 input ports have to be synchronized (turn the synchronized-property on for every input port).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;output-ports&quot;&gt;Output Ports&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;x [integer]: The x-coordinate delivered by the tracking algorithm. The meaning of this value depends on the selected mode.&lt;/li&gt;
+&lt;li&gt;y [integer]: The y-coordinate delivered by the tracking algorithm. The meaning of this value depends on the selected mode.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;event-listener-ports&quot;&gt;Event Listener Ports&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;calibrate: if this event is triggered, calibration procedure for the Eyetracker is started (this is not relevant for the mode &amp;quot;only blob tracking&amp;quot;).&lt;/li&gt;
+&lt;li&gt;offsetCorrection: this event is useful for eyetracking mode, when a drift of the cursor position has occured. When the event is triggered, the plugin stops the output of x/y coordinates for two seconds, where the user has time to fix the exact cursor position with the eyes. A new offset will be calculated to match the cursor position after the 2 seconds pause.&lt;/li&gt;
+&lt;li&gt;showCameraSettings an incoming event displays the settings window for the camera device, where parameters like image brightness or contrast can be adjusted.&lt;/li&gt;
+&lt;li&gt;togglePoseInfoWindow an incoming event displays the pose info window, where the current location of the 4 IR tracking points for head-pose compensation can be seen. For a normal head orientation these 4 points should be centered in the middle of the window (change the angle of the frontal camera to adjust the position of the yellow dots).&lt;/li&gt;
+&lt;li&gt;startEvaluation an incoming event displays the accuracy evaluation window and starts evaluation. When the user follows the cross to 9 positions in the window, the x/y coordinates of the cursor are stored to a file in the ARE folder which can then be used to calculate and compare the gaze accuracy.&lt;/li&gt;
+&lt;li&gt;saveProfile an incoming event saves the camera settings to a file of the given name (property cameraProfile). Use with caution - a saved settings-profile does only work with the same camera which was used to save the settings.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;event-listener-ports&quot;&gt;Event Listener Ports&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;blinkDetected: triggered if the blob detection is lost for a timespan bigger than minBlinkDuration and lower than maxBlinkDuration. This can be used for a single eye-blink detection.&lt;/li&gt;
+&lt;li&gt;longBlinkDetected: triggered if the blob detection is lost for a timespan bigger than maxBlinkDuration. This can be used for a long eye-blink detection.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;properties&quot;&gt;Properties&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;cameraSelection [string, combobox selection]: using this property, the utilized camera can be chosen. Possible values range from “first camera” to “fith camera”. If only one camera is available in the system, “first camera” shall be chosen.&lt;/li&gt;
+&lt;li&gt;cameraResolution [string, combobox selection]: This selection box provides several standard camera resolutions. Changing the resolution affects accuracy and performance (CPU load of the runtime system). Provided selections include “160x120”, “320x240”, “640x480”, “800x600”, “1024x768” and “1600x1200”. If the selectied resolution cannot be delivered by the image acquisition device, the next matching resolution is chosen by the plugin.&lt;/li&gt;
+&lt;li&gt;cameraProfile [string] a filename for the camera settings profile to be saved (property cameraProfile). Use with caution - a saved settings-profile does only work with the same camera which was used to save the settings.&lt;/li&gt;
+&lt;li&gt;cameraDisplayUpdate [integer]: This property allows to select the update rate for the camera display in milliseconds. If “0” milliseconds is chosen, no window for the live-video will be displayed. If “100” is chosen, the live image window will be updated 10 times a second. This property does not influence the frame rate of the camera nor the processing interval for new camera frames, only the display in the GUI is adjusted.&lt;/li&gt;
+&lt;li&gt;tracking mode [string, combobox selection]: The selection of the plugin&amp;#39;s mode of operation (&amp;quot;only blob tracking&amp;quot;, &amp;quot;calibrated eye tracking&amp;quot;, or &amp;quot;calibrated eye tracking with head pose estimation&amp;quot;)&lt;/li&gt;
+&lt;li&gt;xMin [integer]: the minimum value for the x-coordinate output&lt;/li&gt;
+&lt;li&gt;xMax [integer]: the maximum value for the x-coordinate output. If &amp;quot;0&amp;quot; is selected, the plugins auto-detects the screen resolution and uses the X-Size of the computer screen.&lt;/li&gt;
+&lt;li&gt;yMin [integer]: the minimum value for the y-coordinate output&lt;/li&gt;
+&lt;li&gt;yMax [integer]: the maximum value for the y-coordinate output. If &amp;quot;0&amp;quot; is selected, the plugins auto-detects the screen resolution and uses the Y-Size of the computer screen.&lt;/li&gt;
+&lt;li&gt;calibrationStepsX [integer]: the number of rows for generating calibration positions&lt;/li&gt;
+&lt;li&gt;calibrationStepsY [integer]: the number of columns for generating calibration positions. For example: if 4 x-steps and 3 y-steps are chosen, the user has to look at 12 cursor positions during the calibration phase. More positions increase the gaze-tracking accuracy but result in a longer calibration phase.&lt;/li&gt;
+&lt;li&gt;averaging [integer]: the length of the averaging window for smoothening the ouput values.&lt;/li&gt;
+&lt;li&gt;screenSize [double]: the diameter of the computer screen (important if head pose correction is used)&lt;/li&gt;
+&lt;li&gt;minBlinkDuration [integer]: the minimum time for a short blink to be detected (a short blink is detected if the blink time is bigger than minBlinkDuration and lower than maxBlinkDuration.&lt;/li&gt;
+&lt;li&gt;maxBlinkDuration [integer]: the maximum time for a short blink to be detected (a long blink is detected if the blink time is bigger than maxBlinkDuration).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;licence-information&quot;&gt;Licence Information&lt;/h3&gt;
+&lt;p&gt;Originally, the AsTeRICS Runtime Environment (ARE) was licensed under GPLv3. &lt;a href=&quot;http://www.asterics.eu/download/Licenses.pdf&quot;&gt;[1]&lt;/a&gt; For usage within the P4ALL/GPII project, the ARE and dedicated building blocks can be relicensed under a less restrictive licence. For more information please contact &lt;a href=&quot;/FHTW&quot; title=&quot;FHTW&quot;&gt;FHTW&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;further-resources&quot;&gt;Further Resources&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.asterics.eu/index.php?id=88&quot; title=&quot;http://www.asterics.eu/index.php?id=88&quot;&gt;AsTeRICS homepage&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.asterics.eu/index.php?id=55&quot; title=&quot;http://www.asterics.eu/index.php?id=55&quot;&gt;Videos/Demos&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.asterics.eu/index.php?id=26&quot; title=&quot;http://www.asterics.eu/index.php?id=26&quot;&gt;Downloads and Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/asterics/AsTeRICS&quot; title=&quot;https://github.com/asterics/AsTeRICS&quot;&gt;Code Repository&lt;/a&gt;&lt;/p&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/article&gt;
+
+
+&lt;div class=&quot;row&quot;&gt;
+
+
+	
+&lt;/div&gt;
+		&lt;/div&gt;
+	    &lt;div id='layout_footer'&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;footer id='footer' class=&quot;panel&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;columns large-5 small-12&quot;&gt;
+			&amp;copy; GPII Inc. 2014
+			&lt;/div&gt;
+			&lt;div class=&quot;columns large-7 small-12 &quot;&gt;
+				&lt;ul class=&quot;inline-list foot-right&quot;&gt;
+		          	
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/about&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/about&quot; property=&quot;dc:title&quot;&gt;About&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/faq&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/faq&quot; property=&quot;dc:title&quot;&gt;FAQ&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/search&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/search&quot; property=&quot;dc:title&quot;&gt;Search&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/Add_AT_Component&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component&quot; property=&quot;dc:title&quot;&gt;Add Component&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/search_advanced&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/search_advanced&quot; property=&quot;dc:title&quot;&gt;&lt;/a&gt;
+						&lt;/li&gt;
+					
+		        &lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/footer&gt;
+	&lt;!-- Scripts --&gt;
+
+	&lt;!-- Depending on browser support load the zepto-pack or the jquery-pack. 
+		As configured (see grunt-config.json) this includes: 
+		 - modernizr, 
+		 - zepto OR jquery
+		 - foundation.topbar.js
+
+		condition jquery or zepto adapted from: 
+		http://foundation.zurb.com/docs/javascript.html
+	--&gt;
+	&lt;script&gt;
+	  document.write('&lt;script src=/scripts/'
+	    + ('__proto__' in {} ? 'zepto' : 'jquery')
+	    + '-pack.min.js&gt;&lt;\/script&gt;');
+	&lt;/script&gt;
+	&lt;script&gt;
+		//init all foundation plugins. 
+		//Currently this only includes foundation.topbar.js
+		//See http://foundation.zurb.com/docs/javascript.html
+		$(document).foundation();
+	&lt;/script&gt;
+	&lt;script defer=&quot;defer&quot;  src=&quot;http://deinhofer.github.io/zurb-foundation.docpad//scripts/app.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://deinhofer.github.io/zurb-foundation.docpad//scripts/script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>HTML5-based Learning and Generation for Virtual Sensors</title>
+			<link href="http://deinhofer.github.io/zurb-foundation.docpad///posts/HTML5-based_Learning_and_Generation_for_Virtual_Sensors"/>
+			<updated>2014-07-23T13:38:42.000Z</updated>
+			<id>http://deinhofer.github.io/zurb-foundation.docpad///posts/HTML5-based_Learning_and_Generation_for_Virtual_Sensors</id>
+			<content type="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+	&lt;!-- Meta --&gt;
+	&lt;meta charset=&quot;utf-8&quot; /&gt;
+	&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+
+	&lt;!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/i/378 --&gt;
+	&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;
+
+	&lt;!-- Our site title and description --&gt;
+	&lt;title&gt;HTML5-based Learning and Generation for Virtual Sensors | D-Space - Assistive Technology Component Repository&lt;/title&gt;
+	&lt;meta name=&quot;description&quot; content=&quot;When your website appears in search results in say Google, the text here will be shown underneath your website's title.&quot; /&gt;
+	&lt;meta name=&quot;keywords&quot; content=&quot;place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website&quot; /&gt;
+	&lt;meta name=&quot;author&quot; content=&quot;Martin Deinhofer&quot; /&gt;
+
+	&lt;!-- Output DocPad produced meta elements --&gt;
+	&lt;meta name=&quot;generator&quot; content=&quot;DocPad v6.57.3&quot; /&gt;
+
+	&lt;!-- Mobile viewport optimized: h5bp.com/viewport --&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;
+
+	&lt;!-- Icons --&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;icons/favicon.ico&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;icons/apple-touch-icon-144-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;icons/apple-touch-icon-114-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;icons/apple-touch-icon-72-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;icons/apple-touch-icon-57-precomposed.png&quot;&gt;
+
+	&lt;!-- Shims: IE6-8 support of HTML5 elements --&gt;
+	&lt;!--[if lt IE 9]&gt;
+		&lt;script async src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+	
+	&lt;!-- Styles --&gt;
+	&lt;link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro' rel='stylesheet' type='text/css'&gt;
+	&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//styles/zurb-foundation.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//styles/style.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//styles/highlightjs-github.css&quot; /&gt;
+
+&lt;/head&gt;
+&lt;body &gt;
+	&lt;div id='layout'&gt;
+	    &lt;nav class=&quot;container top-bar&quot; style=&quot;&quot;&gt;
+	        &lt;ul class=&quot; title-area&quot;&gt;
+	          &lt;li class=&quot;name&quot;&gt;
+	            &lt;h1&gt;&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//&quot;&gt; D-Space - Assistive Technology Component Repository&lt;/a&gt;&lt;/h1&gt;
+	          &lt;/li&gt;
+	          &lt;li class=&quot;toggle-topbar menu-icon&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;Menu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	        &lt;/ul&gt;  
+	        &lt;section class=&quot;top-bar-section&quot;&gt;
+	          &lt;ul class=&quot;right&quot;&gt;
+	          	
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/about&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/about&quot; property=&quot;dc:title&quot;&gt;About&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/search&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/search&quot; property=&quot;dc:title&quot;&gt;Search&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/Add_AT_Component&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component&quot; property=&quot;dc:title&quot;&gt;Add Component&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          &lt;/ul&gt;
+	        &lt;/section&gt;
+	    &lt;/nav&gt;
+		&lt;div role=&quot;main&quot;&gt;
+			&lt;article id=&quot;post&quot; class=&quot;post&quot;&gt;
+
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;columns post-content&quot;&gt;
+			&lt;h1&gt;HTML5-based Learning and Generation for Virtual Sensors&lt;/h1&gt;
+			&lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;#Component_Description&quot;&gt;Component Description&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Potential_Applications&quot;&gt;Potential Applications&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Technologies&quot;&gt;Technologies&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Licence_Information&quot;&gt;Licence Information&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Status.2C_Known_Issues_.26_Planned_Work&quot;&gt;Status, Known Issues &amp;amp; Planned Work&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#Code_Repository_and_Online_Documentation&quot;&gt;Code Repository and Online Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;jactivity&quot;&gt;jActivity&lt;/h2&gt;
+&lt;p&gt;Keywords: Activity Recognition, HTML5, Machine Learning Contact: bachmann@teco.edu&lt;/p&gt;
+&lt;h3 id=&quot;component-description&quot;&gt;Component Description&lt;/h3&gt;
+&lt;p&gt;Commonly web sites are only adapted by static context parameters (screen size), preference sets or location information. The module adds the possibility to classify the user context during the browsing based on the acceleration of the smart phone.&lt;/p&gt;
+&lt;p&gt;jActivity uses the two HTML5 events `DeviceMotion` and `DeviceOrientation`. The corresponding specifications can be found here: &lt;a href=&quot;http://www.w3.org/TR/orientation-event/&quot; title=&quot;http://www.w3.org/TR/orientation-event/&quot;&gt;DeviceOrientation Event Specification (W3C Working Draft)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The underlying learning system is the start of a reimplementation of the underlying actiServ system (&lt;a href=&quot;http://www.teco.edu/~berch/publications/ISWC10&quot; title=&quot;http://www.teco.edu/~berch/publications/ISWC10&quot;&gt;http://www.teco.edu/~berch/publications/ISWC10&lt;/a&gt;) using open source components. It currently supports only simple single user training.&lt;/p&gt;
+&lt;h3 id=&quot;potential-applications&quot;&gt;Potential Applications&lt;/h3&gt;
+&lt;p&gt;The system can be used to adapt the font size during different activities&lt;/p&gt;
+&lt;p&gt;if getDecisionOfDT([... insert calculated features here ...]) == “Gehen”) { makeFontSizeBigger(); } else { makeFontSizeSmaller(); }&lt;/p&gt;
+&lt;h3 id=&quot;technologies&quot;&gt;Technologies&lt;/h3&gt;
+&lt;p&gt;The system uses HTML5 Device Orientation events (&lt;a href=&quot;http://caniuse.com/deviceorientation,&quot; title=&quot;http://caniuse.com/deviceorientation,&quot;&gt;http://caniuse.com/deviceorientation,&lt;/a&gt; or any other kind of scalar sensor input )&lt;/p&gt;
+&lt;p&gt;It is currently implemented using php on the server side.&lt;/p&gt;
+&lt;p&gt;It further uses &lt;a href=&quot;http://scikit-learn.org/&quot; title=&quot;http://scikit-learn.org/&quot;&gt;http://scikit-learn.org/&lt;/a&gt; for training the classifiers.&lt;/p&gt;
+&lt;p&gt;The client side generated by the server runs as javascript in the web browser.&lt;/p&gt;
+&lt;h3 id=&quot;licence-information&quot;&gt;Licence Information&lt;/h3&gt;
+&lt;p&gt;MIT Licence&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&quot;https://github.com/teco-kit/jActivity/blob/master/LICENSE&quot; title=&quot;https://github.com/teco-kit/jActivity/blob/master/LICENSE&quot;&gt;https://github.com/teco-kit/jActivity/blob/master/LICENSE&lt;/a&gt; for more Info&lt;/p&gt;
+&lt;h3 id=&quot;status-known-issues-planned-work&quot;&gt;Status, Known Issues &amp;amp; Planned Work&lt;/h3&gt;
+&lt;p&gt;The generalization and personalization features for classifiers need to be ported from the proprietary Matlab code.&lt;/p&gt;
+&lt;p&gt;More classifiers need to be implemented in javascript.&lt;/p&gt;
+&lt;h4 id=&quot;code-repository-and-online-documentation&quot;&gt;Code Repository and Online Documentation&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/teco-kit/jActivity/&quot; title=&quot;https://github.com/teco-kit/jActivity/&quot;&gt;https://github.com/teco-kit/jActivity/&lt;/a&gt;&lt;/p&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/article&gt;
+
+
+&lt;div class=&quot;row&quot;&gt;
+
+
+	
+&lt;/div&gt;
+		&lt;/div&gt;
+	    &lt;div id='layout_footer'&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;footer id='footer' class=&quot;panel&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;columns large-5 small-12&quot;&gt;
+			&amp;copy; GPII Inc. 2014
+			&lt;/div&gt;
+			&lt;div class=&quot;columns large-7 small-12 &quot;&gt;
+				&lt;ul class=&quot;inline-list foot-right&quot;&gt;
+		          	
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/about&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/about&quot; property=&quot;dc:title&quot;&gt;About&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/faq&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/faq&quot; property=&quot;dc:title&quot;&gt;FAQ&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/search&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/search&quot; property=&quot;dc:title&quot;&gt;Search&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/Add_AT_Component&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component&quot; property=&quot;dc:title&quot;&gt;Add Component&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/search_advanced&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/search_advanced&quot; property=&quot;dc:title&quot;&gt;&lt;/a&gt;
+						&lt;/li&gt;
+					
+		        &lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/footer&gt;
+	&lt;!-- Scripts --&gt;
+
+	&lt;!-- Depending on browser support load the zepto-pack or the jquery-pack. 
+		As configured (see grunt-config.json) this includes: 
+		 - modernizr, 
+		 - zepto OR jquery
+		 - foundation.topbar.js
+
+		condition jquery or zepto adapted from: 
+		http://foundation.zurb.com/docs/javascript.html
+	--&gt;
+	&lt;script&gt;
+	  document.write('&lt;script src=/scripts/'
+	    + ('__proto__' in {} ? 'zepto' : 'jquery')
+	    + '-pack.min.js&gt;&lt;\/script&gt;');
+	&lt;/script&gt;
+	&lt;script&gt;
+		//init all foundation plugins. 
+		//Currently this only includes foundation.topbar.js
+		//See http://foundation.zurb.com/docs/javascript.html
+		$(document).foundation();
+	&lt;/script&gt;
+	&lt;script defer=&quot;defer&quot;  src=&quot;http://deinhofer.github.io/zurb-foundation.docpad//scripts/app.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://deinhofer.github.io/zurb-foundation.docpad//scripts/script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>Open Source Input Transducer Prototyping Module</title>
+			<link href="http://deinhofer.github.io/zurb-foundation.docpad///posts/Open_Source_Input_Transducer_Prototyping_Module"/>
+			<updated>2014-07-23T13:36:07.000Z</updated>
+			<id>http://deinhofer.github.io/zurb-foundation.docpad///posts/Open_Source_Input_Transducer_Prototyping_Module</id>
+			<content type="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+	&lt;!-- Meta --&gt;
+	&lt;meta charset=&quot;utf-8&quot; /&gt;
+	&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+
+	&lt;!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/i/378 --&gt;
+	&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;
+
+	&lt;!-- Our site title and description --&gt;
+	&lt;title&gt;Open Source Input Transducer Prototyping Module | D-Space - Assistive Technology Component Repository&lt;/title&gt;
+	&lt;meta name=&quot;description&quot; content=&quot;When your website appears in search results in say Google, the text here will be shown underneath your website's title.&quot; /&gt;
+	&lt;meta name=&quot;keywords&quot; content=&quot;place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website&quot; /&gt;
+	&lt;meta name=&quot;author&quot; content=&quot;Martin Deinhofer&quot; /&gt;
+
+	&lt;!-- Output DocPad produced meta elements --&gt;
+	&lt;meta name=&quot;generator&quot; content=&quot;DocPad v6.57.3&quot; /&gt;
+
+	&lt;!-- Mobile viewport optimized: h5bp.com/viewport --&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;
+
+	&lt;!-- Icons --&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;icons/favicon.ico&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;icons/apple-touch-icon-144-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;icons/apple-touch-icon-114-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;icons/apple-touch-icon-72-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;icons/apple-touch-icon-57-precomposed.png&quot;&gt;
+
+	&lt;!-- Shims: IE6-8 support of HTML5 elements --&gt;
+	&lt;!--[if lt IE 9]&gt;
+		&lt;script async src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+	
+	&lt;!-- Styles --&gt;
+	&lt;link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro' rel='stylesheet' type='text/css'&gt;
+	&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//styles/zurb-foundation.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//styles/style.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//styles/highlightjs-github.css&quot; /&gt;
+
+&lt;/head&gt;
+&lt;body &gt;
+	&lt;div id='layout'&gt;
+	    &lt;nav class=&quot;container top-bar&quot; style=&quot;&quot;&gt;
+	        &lt;ul class=&quot; title-area&quot;&gt;
+	          &lt;li class=&quot;name&quot;&gt;
+	            &lt;h1&gt;&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//&quot;&gt; D-Space - Assistive Technology Component Repository&lt;/a&gt;&lt;/h1&gt;
+	          &lt;/li&gt;
+	          &lt;li class=&quot;toggle-topbar menu-icon&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;Menu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	        &lt;/ul&gt;  
+	        &lt;section class=&quot;top-bar-section&quot;&gt;
+	          &lt;ul class=&quot;right&quot;&gt;
+	          	
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/about&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/about&quot; property=&quot;dc:title&quot;&gt;About&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/search&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/search&quot; property=&quot;dc:title&quot;&gt;Search&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/Add_AT_Component&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component&quot; property=&quot;dc:title&quot;&gt;Add Component&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          &lt;/ul&gt;
+	        &lt;/section&gt;
+	    &lt;/nav&gt;
+		&lt;div role=&quot;main&quot;&gt;
+			&lt;article id=&quot;post&quot; class=&quot;post&quot;&gt;
+
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;columns post-content&quot;&gt;
+			&lt;h1&gt;Open Source Input Transducer Prototyping Module&lt;/h1&gt;
+			&lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;#Component_Descriptions&quot;&gt;Component Descriptions&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Potential_Applications&quot;&gt;Potential Applications&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Technologies&quot;&gt;Technologies&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Tool_chain_for_the_microcontroller&quot;&gt;Tool chain for the microcontroller&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Data_interface&quot;&gt;Data interface&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#Input_Ports&quot;&gt;Input Ports&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Output_Ports&quot;&gt;Output Ports&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Event_listeners&quot;&gt;Event listeners&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Event_Triggers&quot;&gt;Event Triggers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Properties&quot;&gt;Properties&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;#Licence_Information&quot;&gt;Licence Information&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Further_Resources&quot;&gt;Further Resources&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;open-source-input-transducer-prototyping-module&quot;&gt;Open Source Input Transducer Prototyping Module&lt;/h2&gt;
+&lt;p&gt;Keywords: Assistive Technologies, Sensor, Actuator, Microcontroller, Arduino, teensy ,Contact: &lt;a href=&quot;/FHTW&quot; title=&quot;FHTW&quot;&gt;FHTW&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;component-descriptions&quot;&gt;Component Descriptions&lt;/h3&gt;
+&lt;p&gt;Microcontroller boards provide a cost-effective and efficient solution to interface computers to the environment, measure sensor values or control actuators. For assisitve application in particular, microcontrollers can be interesting to explore alternative input methods or provide means to interact with or manipulate the environment.&lt;/p&gt;
+&lt;p&gt;The Arduino component provides an interface to the popular &lt;a href=&quot;http://arduino.cc/de/Main/ArduinoBoardUno&quot; title=&quot;http://arduino.cc/de/Main/ArduinoBoardUno&quot;&gt;Arduino Uno microcontroller&lt;/a&gt; and makes available analog inputs and digital inputs and outputs. Similarily, an interface to the &lt;a href=&quot;https://www.pjrc.com/teensy/&quot; title=&quot;https://www.pjrc.com/teensy/&quot;&gt;Teensy&lt;/a&gt; controllers or other types of microcontroller platforms can be provided on demand.&lt;/p&gt;
+&lt;h3 id=&quot;potential-applications&quot;&gt;Potential Applications&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Measure analog data of a bend sensor, force sensor, accelerometer, gyrometer, pressure sensors, proximity sensors ...&lt;/li&gt;
+&lt;li&gt;Attach (selfmade) switches/buttons as digital inputs to control computer applications or provide mouse/keyboard alternatives&lt;/li&gt;
+&lt;li&gt;Use digital outputs to control actuators (on/off lights, servo motor,...)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;technologies&quot;&gt;Technologies&lt;/h3&gt;
+&lt;p&gt;An Arduino UNO microcontroller board or a similar supported microcontroller has to be connected to an USB port. The Arduino CIM firmware must have been uploaded into the microcontroller&amp;#39;s flash memory to communicate via the CIM protocol with the respective component of the AsTeRICS Runtime Environmnet. Data is provided as continous data stream. Events are triggered in the case of pin state changes. The state of pins can be controlled through Event listener ports.&lt;/p&gt;
+&lt;h4 id=&quot;tool-chain-for-the-microcontroller&quot;&gt;Tool chain for the microcontroller&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://winavr.sourceforge.net/&quot; title=&quot;http://winavr.sourceforge.net/&quot;&gt;WinAVR: C-Compiler, Tools,...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.atmel.com/microsite/atmel_studio6/&quot; title=&quot;http://www.atmel.com/microsite/atmel_studio6/&quot;&gt;AVRStudio: IDE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;data-interface&quot;&gt;Data interface&lt;/h4&gt;
+&lt;p&gt;(for an explaination of the terms &amp;quot;port&amp;quot;, &amp;quot;event listener&amp;quot;, &amp;quot;event trigger&amp;quot; and &amp;quot;property&amp;quot; please refer to &lt;a href=&quot;/AsTeRICS_AT_Modules&quot; title=&quot;AsTeRICS AT Modules&quot;&gt;AsTeRICS AT Modules&lt;/a&gt;)&lt;/p&gt;
+&lt;h5 id=&quot;input-ports&quot;&gt;Input Ports&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;pwm3 [integer]: PWM channel 3, output value (range: 0-255). The output signal depends on the mode (PWM or servo PWM)&lt;/li&gt;
+&lt;li&gt;pwm5 [integer]: PWM channel 5, output value (range: 0-255). The output signal depends on the mode (PWM or servo PWM)&lt;/li&gt;
+&lt;li&gt;pwm6 [integer]: PWM channel 6, output value (range: 0-255). The output signal depends on the mode (PWM or servo PWM)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;output-ports&quot;&gt;Output Ports&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;A0 - A5 [integer]: The readings of the 6 analog channels of the Arduino (0-1023)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;event-listeners&quot;&gt;Event listeners&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;setPin2 - setPin13: An incoming event will set the corresponding digital output pin on the Arduino to high level (5V)&lt;/li&gt;
+&lt;li&gt;clearPin2 - clearPin13: An incoming event will set the corresponding digital output pin on the Arduino to low level (0V)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;event-triggers&quot;&gt;Event Triggers&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;pin2ChangedToLow - pin13ChangedToLow: This event is triggered if the corresponding input pin on the Arduino switches from high to low level (connected to 0V)&lt;/li&gt;
+&lt;li&gt;pin2ChangedToHigh - pin13ChangedToHigh: This event is triggered if the corresponding input pin on the Arduino switches from low to high level (connected to 5V)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;properties&quot;&gt;Properties&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;periodicADCUpdate [integer]: This property defines how often the ADC values are measured and put out on the ports A0-A5 (0=disable ADC)&lt;/li&gt;
+&lt;li&gt;pin2Mode - pin13Mode [integer]: This property defines the mode of the Arduino Pins. The value can be selected via a ComboBox. Possible selections are:&lt;ul&gt;
+&lt;li&gt;not used&lt;/li&gt;
+&lt;li&gt;Input without pullup resistor&lt;/li&gt;
+&lt;li&gt;Input with pullup resistor&lt;/li&gt;
+&lt;li&gt;output, default low&lt;/li&gt;
+&lt;li&gt;output, default high&lt;/li&gt;
+&lt;li&gt;PWM servo (PWM for servo driving, 1-2ms pulse), available only on pin 3,5 and 6&lt;/li&gt;
+&lt;li&gt;500Hz PWM (normal 0-100% PWM), available only on pin 3,5 and 6&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;licence-information&quot;&gt;Licence Information&lt;/h3&gt;
+&lt;p&gt;Originally, the AsTeRICS Runtime Environment (ARE) was licensed under GPLv3. [1] For usage within the P4ALL/GPII project, the ARE and dedicated building blocks can be relicensed under a less restrictive licence. For more information please contact &lt;a href=&quot;/FHTW&quot; title=&quot;FHTW&quot;&gt;FHTW&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;further-resources&quot;&gt;Further Resources&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.asterics.eu/index.php?id=88&quot; title=&quot;http://www.asterics.eu/index.php?id=88&quot;&gt;AsTeRICS homepage&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.asterics.eu/index.php?id=55&quot; title=&quot;http://www.asterics.eu/index.php?id=55&quot;&gt;Videos/Demos&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.asterics.eu/index.php?id=26&quot; title=&quot;http://www.asterics.eu/index.php?id=26&quot;&gt;Downloads and Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/asterics/AsTeRICS&quot; title=&quot;https://github.com/asterics/AsTeRICS&quot;&gt;Code Repository&lt;/a&gt;&lt;/p&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/article&gt;
+
+
+&lt;div class=&quot;row&quot;&gt;
+
+
+	
+&lt;/div&gt;
+		&lt;/div&gt;
+	    &lt;div id='layout_footer'&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;footer id='footer' class=&quot;panel&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;columns large-5 small-12&quot;&gt;
+			&amp;copy; GPII Inc. 2014
+			&lt;/div&gt;
+			&lt;div class=&quot;columns large-7 small-12 &quot;&gt;
+				&lt;ul class=&quot;inline-list foot-right&quot;&gt;
+		          	
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/about&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/about&quot; property=&quot;dc:title&quot;&gt;About&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/faq&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/faq&quot; property=&quot;dc:title&quot;&gt;FAQ&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/search&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/search&quot; property=&quot;dc:title&quot;&gt;Search&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/Add_AT_Component&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component&quot; property=&quot;dc:title&quot;&gt;Add Component&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/search_advanced&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/search_advanced&quot; property=&quot;dc:title&quot;&gt;&lt;/a&gt;
+						&lt;/li&gt;
+					
+		        &lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/footer&gt;
+	&lt;!-- Scripts --&gt;
+
+	&lt;!-- Depending on browser support load the zepto-pack or the jquery-pack. 
+		As configured (see grunt-config.json) this includes: 
+		 - modernizr, 
+		 - zepto OR jquery
+		 - foundation.topbar.js
+
+		condition jquery or zepto adapted from: 
+		http://foundation.zurb.com/docs/javascript.html
+	--&gt;
+	&lt;script&gt;
+	  document.write('&lt;script src=/scripts/'
+	    + ('__proto__' in {} ? 'zepto' : 'jquery')
+	    + '-pack.min.js&gt;&lt;\/script&gt;');
+	&lt;/script&gt;
+	&lt;script&gt;
+		//init all foundation plugins. 
+		//Currently this only includes foundation.topbar.js
+		//See http://foundation.zurb.com/docs/javascript.html
+		$(document).foundation();
+	&lt;/script&gt;
+	&lt;script defer=&quot;defer&quot;  src=&quot;http://deinhofer.github.io/zurb-foundation.docpad//scripts/app.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://deinhofer.github.io/zurb-foundation.docpad//scripts/script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>AsTeRICS AT Modules (Generic Websocket Data Interface)</title>
+			<link href="http://deinhofer.github.io/zurb-foundation.docpad///posts/AsTeRICS_AT_Modules"/>
+			<updated>2014-07-23T10:35:50.000Z</updated>
+			<id>http://deinhofer.github.io/zurb-foundation.docpad///posts/AsTeRICS_AT_Modules</id>
+			<content type="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+	&lt;!-- Meta --&gt;
+	&lt;meta charset=&quot;utf-8&quot; /&gt;
+	&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+
+	&lt;!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/i/378 --&gt;
+	&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;
+
+	&lt;!-- Our site title and description --&gt;
+	&lt;title&gt;AsTeRICS AT Modules (Generic Websocket Data Interface) | D-Space - Assistive Technology Component Repository&lt;/title&gt;
+	&lt;meta name=&quot;description&quot; content=&quot;When your website appears in search results in say Google, the text here will be shown underneath your website's title.&quot; /&gt;
+	&lt;meta name=&quot;keywords&quot; content=&quot;place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website&quot; /&gt;
+	&lt;meta name=&quot;author&quot; content=&quot;Martin Deinhofer&quot; /&gt;
+
+	&lt;!-- Output DocPad produced meta elements --&gt;
+	&lt;meta name=&quot;generator&quot; content=&quot;DocPad v6.57.3&quot; /&gt;
+
+	&lt;!-- Mobile viewport optimized: h5bp.com/viewport --&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;
+
+	&lt;!-- Icons --&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;icons/favicon.ico&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;icons/apple-touch-icon-144-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;icons/apple-touch-icon-114-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;icons/apple-touch-icon-72-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;icons/apple-touch-icon-57-precomposed.png&quot;&gt;
+
+	&lt;!-- Shims: IE6-8 support of HTML5 elements --&gt;
+	&lt;!--[if lt IE 9]&gt;
+		&lt;script async src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+	
+	&lt;!-- Styles --&gt;
+	&lt;link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro' rel='stylesheet' type='text/css'&gt;
+	&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//styles/zurb-foundation.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//styles/style.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//styles/highlightjs-github.css&quot; /&gt;
+
+&lt;/head&gt;
+&lt;body &gt;
+	&lt;div id='layout'&gt;
+	    &lt;nav class=&quot;container top-bar&quot; style=&quot;&quot;&gt;
+	        &lt;ul class=&quot; title-area&quot;&gt;
+	          &lt;li class=&quot;name&quot;&gt;
+	            &lt;h1&gt;&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//&quot;&gt; D-Space - Assistive Technology Component Repository&lt;/a&gt;&lt;/h1&gt;
+	          &lt;/li&gt;
+	          &lt;li class=&quot;toggle-topbar menu-icon&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;Menu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	        &lt;/ul&gt;  
+	        &lt;section class=&quot;top-bar-section&quot;&gt;
+	          &lt;ul class=&quot;right&quot;&gt;
+	          	
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/about&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/about&quot; property=&quot;dc:title&quot;&gt;About&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/search&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/search&quot; property=&quot;dc:title&quot;&gt;Search&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/Add_AT_Component&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component&quot; property=&quot;dc:title&quot;&gt;Add Component&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          &lt;/ul&gt;
+	        &lt;/section&gt;
+	    &lt;/nav&gt;
+		&lt;div role=&quot;main&quot;&gt;
+			&lt;article id=&quot;post&quot; class=&quot;post&quot;&gt;
+
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;columns post-content&quot;&gt;
+			&lt;h1&gt;AsTeRICS AT Modules (Generic Websocket Data Interface)&lt;/h1&gt;
+			&lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;#AsTeRICS_AT_Modules_.28Generic_Websocket_Data_Interface.29&quot;&gt;AsTeRICS AT Modules (Generic Websocket Data Interface)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Component_Description&quot;&gt;Component Description&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Potential_Applications&quot;&gt;Potential Applications&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Technologies&quot;&gt;Technologies&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#Definition_ACS&quot;&gt;Definition ACS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Definition_ARE&quot;&gt;Definition ARE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Definition_Plugin.2C_Port_and_Event&quot;&gt;Definition Plugin, Port and Event&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Generic_Websocket_Data_Interface&quot;&gt;Generic Websocket Data Interface&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;#Operating_System&quot;&gt;Operating System&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Languages.2FLibraries&quot;&gt;Languages/Libraries&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#User_Interface&quot;&gt;User Interface&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Licence_Information&quot;&gt;Licence Information&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#Further_Resources&quot;&gt;Further Resources&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;asterics-at-modules-generic-websocket-data-interface-&quot;&gt;AsTeRICS AT Modules (Generic Websocket Data Interface)&lt;/h2&gt;
+&lt;p&gt;Keywords: Assistive Technologies, Sensor Data, Websockets Contact: &lt;a href=&quot;/FHTW&quot; title=&quot;FHTW&quot;&gt;FHTW&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;component-description&quot;&gt;Component Description&lt;/h3&gt;
+&lt;p&gt;The “Assistive Technology Rapid Integration and Construction Set” (AsTeRICS) offers a flexible framework for Assistive Technologies (AT), which can be adapted to the motor abilities of users. AsTeRICS is intended to ease access to different devices such as personal computers, cell phones and smart home devices via one single platform which offers many different input methods. One input method that works well for a user may be used in different contexts – e.g. the same method for accessing the computer mouse function may be used to operate the home stereo. The various capabilities of the AsTeRICS system include PC input device emulation, game control, environmental control applications and utilization of embedded devices. AsTeRICS provides an affordable system for developing user driven AT by combining sensors like webcams, accelerometers, digital switches, sip/puff sensors and special mice/joysticks with basic actuators enabling mouse emulation, door openening, homecontrol.&lt;/p&gt;
+&lt;h3 id=&quot;potential-applications&quot;&gt;Potential Applications&lt;/h3&gt;
+&lt;p&gt;Choose an input modality best suiting your needs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use a webcam and tracking of face movements to control a computer&lt;/li&gt;
+&lt;li&gt;Use a sip/puff sensor to control a computer&lt;/li&gt;
+&lt;li&gt;Use any joystick, keyboard, special mouse or special AT device as a joystick, keyboard or mouse to control a computer&lt;/li&gt;
+&lt;li&gt;Use EMG/EEG biosignal acquisition to trigger actions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Use your input modality of choice to do:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Home automation&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Switch on/off light&lt;/li&gt;
+&lt;li&gt;Control TV/Stereo&lt;/li&gt;
+&lt;li&gt;Open/Close door&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Remote control toys &lt;a href=&quot;/Http://www.asterics.eu/index.php%3Fid%3D65&quot; title=&quot;http://www.asterics.eu/index.php?id=65&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://www.asterics.eu/index.php?id=65&quot; title=&quot;http://www.asterics.eu/index.php?id=65&quot;&gt;http://www.asterics.eu/index.php?id=65&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;and many more !&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;technologies&quot;&gt;Technologies&lt;/h3&gt;
+&lt;p&gt;The following section explains several important concepts to understand and use the AsTeRICS framework as a whole or individula components in particular:&lt;/p&gt;
+&lt;h5 id=&quot;definition-acs&quot;&gt;Definition ACS&lt;/h5&gt;
+&lt;p&gt;AsTeRICS Configuration Suite is a graphical editor for easy building and adapting “Assistive Technologies”. For this purpose you use sensors, actuators and processors, which are included in the software. You can connect these elements and build your own individual setup (also called a “model”), which is specially adapted for your needs, easily and fast.&lt;/p&gt;
+&lt;h5 id=&quot;definition-are&quot;&gt;Definition ARE&lt;/h5&gt;
+&lt;p&gt;The AsTeRICS Runtime Environment is the basic software framework for all AsTeRICS applications and use-cases. The models built in the ACS will run in the ARE. The ACS can be seen as a configuration program for the ARE.&lt;/p&gt;
+&lt;h5 id=&quot;definition-plugin-port-and-event&quot;&gt;Definition Plugin, Port and Event&lt;/h5&gt;
+&lt;p&gt;The AsTeRICS Construction Set consists of many different plugins (components), where some of them could be interesting for integration into other assitive applications of software frameworks. A plugin can send and receive data via it&amp;#39;s output and input ports. This data can be a continous flow of individual values (standard data types are supported: integer, string, boolean, double.) Furthermore, particular Events can be sent or received by plugins via the Event Trigger and Event Listener ports. An Event Listener port waits for an incoming event and can initiate a particular action in the plugin. An Event Trigger port can be used to send an event from the plugin to another one. The internal configuration parameters of a plugin can be influenced via the plugin Properties (which define eg. the mode of operation, a threshold value, or a filename parameter). When used inside the ARE framework, interconnected and configured plugins consitute the overall functionality of the AsTeRICS model.&lt;/p&gt;
+&lt;h5 id=&quot;generic-websocket-data-interface&quot;&gt;Generic Websocket Data Interface&lt;/h5&gt;
+&lt;p&gt;In the course of P4All a generic bidirectional data interface through a websocket will be provided. This way sensor data can be forwarded to a browser or another application to visualize the data or trigger actions. Vice versa an application can send data to feed in to the AsTeRICS system.&lt;/p&gt;
+&lt;p&gt;The exact details of the interface are still to be defined and could be adapted to special requirements of implementers if necessary.&lt;/p&gt;
+&lt;h4 id=&quot;operating-system&quot;&gt;Operating System&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows XP, Vista, 7, 8&lt;/li&gt;
+&lt;li&gt;A reduced subset will be available on Linux&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;languages-libraries&quot;&gt;Languages/Libraries&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Java (JRE-Version 7, 32-bit)&lt;/li&gt;
+&lt;li&gt;native libraries&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.eclipse.org/equinox/&quot; title=&quot;http://www.eclipse.org/equinox/&quot;&gt;Equinox OSGI&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;user-interface&quot;&gt;User Interface&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Java Swing UI&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;licence-information&quot;&gt;Licence Information&lt;/h3&gt;
+&lt;p&gt;Originally, the AsTeRICS Runtime Environment (ARE) was licensed under GPLv3. &lt;a href=&quot;http://www.asterics.eu/download/Licenses.pdf&quot;&gt;[1]&lt;/a&gt; For usage within the P4ALL/GPII project, the ARE and dedicated building blocks can be relicensed under a less restrictive licence. For more information please contact &lt;a href=&quot;/FHTW&quot; title=&quot;FHTW&quot;&gt;FHTW&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;further-resources&quot;&gt;Further Resources&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.asterics.eu/index.php?id=88&quot; title=&quot;http://www.asterics.eu/index.php?id=88&quot;&gt;AsTeRICS homepage&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.asterics.eu/index.php?id=55&quot; title=&quot;http://www.asterics.eu/index.php?id=55&quot;&gt;Videos/Demos&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.asterics.eu/index.php?id=26&quot; title=&quot;http://www.asterics.eu/index.php?id=26&quot;&gt;Downloads and Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/asterics/AsTeRICS&quot; title=&quot;https://github.com/asterics/AsTeRICS&quot;&gt;Code Repository&lt;/a&gt;&lt;/p&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/article&gt;
+
+
+&lt;div class=&quot;row&quot;&gt;
+
+
+	
+&lt;/div&gt;
+		&lt;/div&gt;
+	    &lt;div id='layout_footer'&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;footer id='footer' class=&quot;panel&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;columns large-5 small-12&quot;&gt;
+			&amp;copy; GPII Inc. 2014
+			&lt;/div&gt;
+			&lt;div class=&quot;columns large-7 small-12 &quot;&gt;
+				&lt;ul class=&quot;inline-list foot-right&quot;&gt;
+		          	
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/about&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/about&quot; property=&quot;dc:title&quot;&gt;About&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/faq&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/faq&quot; property=&quot;dc:title&quot;&gt;FAQ&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/search&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/search&quot; property=&quot;dc:title&quot;&gt;Search&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/Add_AT_Component&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/Add_AT_Component&quot; property=&quot;dc:title&quot;&gt;Add Component&lt;/a&gt;
+						&lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+						&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/search_advanced&quot; class=&quot;&quot;&gt;
+							&lt;a href=&quot;http://deinhofer.github.io/zurb-foundation.docpad//pages/search_advanced&quot; property=&quot;dc:title&quot;&gt;&lt;/a&gt;
+						&lt;/li&gt;
+					
+		        &lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/footer&gt;
+	&lt;!-- Scripts --&gt;
+
+	&lt;!-- Depending on browser support load the zepto-pack or the jquery-pack. 
+		As configured (see grunt-config.json) this includes: 
+		 - modernizr, 
+		 - zepto OR jquery
+		 - foundation.topbar.js
+
+		condition jquery or zepto adapted from: 
+		http://foundation.zurb.com/docs/javascript.html
+	--&gt;
+	&lt;script&gt;
+	  document.write('&lt;script src=/scripts/'
+	    + ('__proto__' in {} ? 'zepto' : 'jquery')
+	    + '-pack.min.js&gt;&lt;\/script&gt;');
+	&lt;/script&gt;
+	&lt;script&gt;
+		//init all foundation plugins. 
+		//Currently this only includes foundation.topbar.js
+		//See http://foundation.zurb.com/docs/javascript.html
+		$(document).foundation();
+	&lt;/script&gt;
+	&lt;script defer=&quot;defer&quot;  src=&quot;http://deinhofer.github.io/zurb-foundation.docpad//scripts/app.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://deinhofer.github.io/zurb-foundation.docpad//scripts/script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+		</entry>
+	
+</feed>
