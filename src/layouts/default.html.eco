@@ -35,7 +35,7 @@
 	
 	<!-- Styles -->
 	<link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro' rel='stylesheet' type='text/css'>
-	<%- @getBlock('styles').add(@site.styles).toHTML() %>
+	<%- @getBlock('styles').add(@getUrl(@site.styles)).toHTML() %>
 
 </head>
 <body >
@@ -102,6 +102,6 @@
 		//See http://foundation.zurb.com/docs/javascript.html
 		$(document).foundation();
 	</script>
-	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
+	<%- @getBlock('scripts').add(@getUrl(@site.scripts)).toHTML() %>
 </body>
 </html>
