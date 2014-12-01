@@ -11,7 +11,7 @@ title: 'Home'
 			<h3>        
 				<p>You want to build an assistive product?</p>
 				<p>You want to reuse existing components, frameworks, libraries?</p>
-				<form class="input [secondary success]" action="./pages/search" method="GET">
+				<form class="input [secondary success]" action="<%= @getUrl('./pages/search') %>" method="GET">
 				  <section>
 				    <input type="text" name="query" value="" />
 				    <input type="submit" value="Search" />
@@ -29,12 +29,12 @@ title: 'Home'
 		<h2>Add Assistive Component</h2>
 			<p>You develop assistive components, frameworks, libraries?</p>
 			<p>You know interesting databases, platforms and listings for assistive components?</p>
-			<p><a class="button [radius round]" href="./pages/Add_AT_Component" role="button">Add Entry »</a></p>
+			<p><a class="button [radius round]" href="<%= @getUrl('./pages/Add_AT_Component') %>" role="button">Add Entry »</a></p>
 	</section>
 	<section class="small-12 large-6 columns">
 		<h2>Learn about Assistive Components</h2>
 		Do want to learn more about assistive components and how to integrate them into your product or service?</p>
 		<p>Find examples, turorials, videos, use cases, answers,...<p>
-		<p><a class="button [radius round]" href="./pages/learn" role="button">Learn »</a></p>	
+		<p><a class="button [radius round]" href="<%= @getUrl('./pages/learn') %>" role="button">Learn »</a></p>	
 	</section>
 </div>

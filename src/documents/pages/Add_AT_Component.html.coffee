@@ -4,7 +4,7 @@ title: 'Add Component'
 pageOrder: 5
 includenInNavs: ['main']
 navtitle: 'Add Component'
-dynamic: true
+dynamic: false
 ###
 
 h2 "Add Component"

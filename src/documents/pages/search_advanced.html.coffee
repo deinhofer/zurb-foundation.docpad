@@ -13,7 +13,7 @@ if @req.query.query
 	ul ->
 	for document in @getCollection('documents').findAll({title:$like:query}).toJSON()
 	    li 'typeof': 'sioc:Page', about: document.url, class: ('active'  if @document.url is document.url), ->
-		a href: document.url, property: 'dc:title', ->
+		a href: @getUrl(document.url), property: 'dc:title', ->
 		    text document.title
 
 else
