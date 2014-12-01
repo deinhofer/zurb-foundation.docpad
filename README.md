@@ -1,25 +1,32 @@
-# [Zurb Foundation](http://foundation.zurb.com/) skeleton for [DocPad](https://github.com/bevry/docpad)
+# Mockup for Developer Space Repository of AT-Components
 
-A clean responsive template that you may like as a quick and pretty clean setup that includes both a homepage, some pages and a blog. 
+The mockup uses [Zurb Foundation](http://foundation.zurb.com/) and is realized with [DocPad](https://github.com/bevry/docpad).
 
-Contenttypes: 
-
-* pages
-* posts
-* faqentries
-
-These may help to quickly come to grips with how easy it is to create and [query](http://bevry.me/learn/queryengine-guide) collection-types and basically how to get a good information architecture up. All credits to [DocPad](http://http://docpad.org/) that makes all this stuff extremely simple to do.
+###Here you can find the [static mockup](http://deinhofer.github.io/zurb-foundation.docpad/) without dynamic search results.
+To be able to use the dynamic search feature and edit content, layout and style, please install docpad and run the project.
 
 ## Getting Started
 
-1. [Install DocPad](https://github.com/bevry/docpad)
-
+1. [Install DocPad on Ubuntu]
+	``` bash
+	sudo apt-get update && sudo apt-get install curl build-essential openssl libssl-dev git python
+	
+	 git clone git://github.com/creationix/nvm.git ~/.nvm
+	 printf "\n\n# NVM\nif [ -s ~/.nvm/nvm.sh ]; then\n\tNVM_DIR=~/.nvm\n\tsource ~/.nvm/nvm.sh\nfi" >> ~/.bashrc
+	 NVM_DIR=~/.nvm
+	 source ~/.nvm/nvm.sh
+	 
+	 nvm install v0.10.24
+ 	 nvm alias default 0.10
+ 	 nvm use 0.10
+ 	 
+ 	 npm install -g npm; npm install -g docpad@6.57.3
+	```
 2. Clone the project and run the server
 
 	``` bash
-	git clone git@github.com:Clearskyabove/zurb-foundation.docpad.git
+	git clone https://github.com/deinhofer/zurb-foundation.docpad
 	cd zurb-foundation.docpad
-	docpad update
 	docpad run
 	```
 
@@ -28,11 +35,6 @@ These may help to quickly come to grips with how easy it is to create and [query
 4. Start hacking away by modifying the `src` directory
 
 5. Already installed [docpages-plugin-ghpages](https://github.com/docpad/docpad-plugin-ghpages) for easy publishing to github pages. See the link for how to publish. 
-
-## I'm getting EMFILE errors
-
-[See here for the reason why and the solution](http://docpad.org/docs/troubleshoot#i-m-getting-emfile-too-many-open-files)
-
 ## Boring Legal Stuff
-
+The core of the mockup is forked from [ClearSky zurb skeleton](https://github.com/Clearskyabove/zurb-foundation.docpad) the original licenses are:
 Unless stated otherwise, all content is licensed under the [Creative Commons Attribution License](http://creativecommons.org/licenses/by/3.0/) and code licensed under the [MIT License](http://creativecommons.org/licenses/MIT/), © [ClearSkyABove](http://clearskyabove.com)
